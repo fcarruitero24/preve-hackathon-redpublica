@@ -81,18 +81,6 @@ Abre `data/Presupuesto_PreVe.xlsx` en Excel o Google Sheets. Todas las fórmulas
 
 ---
 
-## 👥 Equipo — Minsky Devs
-
-| Integrante | Rol | Carrera |
-|---|---|---|
-| Fabrizio Carruitero Osorio | Líder de Proyecto + Data Scientist | Ing. Industrial |
-| Ramón Jorge Arévalo | Tech Lead / Arquitecto | Ing. de Software |
-| Eduardo Santillán Taboada | Backend Developer + Data Engineer | Ing. de Sistemas de Información |
-| Victor Temoche Coronado | Frontend Developer + UX | Ing. de Sistemas de Información |
-| Oscar Gamboa More | QA + Encargado de Campo | Ing. de Sistemas de Información |
-
----
-
 ## 📊 Datos y fuentes
 
 Todos los datos citados provienen de fuentes oficiales: INEI (Victimización en el Perú 2024/2025, Estadísticas de Criminalidad), MININTER (Política Nacional Multisectorial de Seguridad Ciudadana al 2030), CEPLAN y el Observatorio del Crimen y la Violencia (Credicorp/CHS, 2025). El dataset de incidentes (`incidentes_juvenil.csv`) es **sintético**, calibrado con tendencias reales, y sirve como prueba de concepto del modelo predictivo mientras se recolectan datos reales durante el piloto.
@@ -102,5 +90,7 @@ Ver `docs/Indice_Fuentes_Datos.docx` para el listado completo de fuentes descarg
 ---
 
 ## 📄 Licencia
+
+Proyecto desarrollado con fines académicos y de postulación a la Hackathon RedPública (PNUD), 2026. Uso educativo y de innovación social.
 
 Proyecto desarrollado con fines académicos y de postulación a la Hackathon RedPública (PNUD), 2026. Uso educativo y de innovación social.
