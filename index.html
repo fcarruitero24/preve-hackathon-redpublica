@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PreVe — Demo en vivo</title>
+<style>
+  :root {
+    --bg0:#060a14; --bg1:#0d1424; --ink:#e8eef7; --muted:#8b9bb4;
+    --accent:#f4a300; --cyan:#2dd4bf; --danger:#ff3b5c; --wa-green:#00a884;
+    --risk-low:#21c46a; --risk-mid:#f4a300; --risk-high:#ff3b5c;
+    --glass:rgba(255,255,255,.04); --glass-brd:rgba(255,255,255,.09);
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { height:100%; }
+  body {
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+    background:
+      radial-gradient(900px 500px at 12% -5%, rgba(45,212,191,.10), transparent 60%),
+      radial-gradient(800px 600px at 100% 0%, rgba(244,163,0,.10), transparent 55%),
+      linear-gradient(165deg,var(--bg0),var(--bg1));
+    color:var(--ink); min-height:100vh; overflow-x:hidden;
+  }
+  .scanlines::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:1;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.015) 0 1px,transparent 1px 3px); mix-blend-mode:overlay; }
+  .wrap { max-width:1240px; margin:0 auto; padding:22px 18px 40px; position:relative; z-index:2; }
+  header.top { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  .brand { font-size:40px; font-weight:900; letter-spacing:-1.5px; display:inline-flex; align-items:center; }
+  .brand .pre { color:var(--ink); } .brand .ve { color:var(--accent); }
+  .brand .ping { width:10px; height:10px; border-radius:50%; background:var(--cyan); margin-left:10px; animation:ping 1.6s infinite; }
+  @keyframes ping { 0%{box-shadow:0 0 0 0 rgba(45,212,191,.6);} 70%{box-shadow:0 0 0 14px rgba(45,212,191,0);} 100%{box-shadow:0 0 0 0 rgba(45,212,191,0);} }
+  .tagline { color:var(--muted); font-size:14px; margin-top:2px; }
+  .live-badge { display:inline-flex; align-items:center; gap:7px; background:rgba(255,59,92,.12); color:#ff7a91; border:1px solid rgba(255,59,92,.3); padding:7px 13px; border-radius:30px; font-size:12px; font-weight:700; letter-spacing:.5px; text-transform:uppercase; }
+  .live-badge .d { width:8px; height:8px; border-radius:50%; background:var(--danger); animation:blink 1s infinite; }
+  @keyframes blink { 50%{opacity:.25;} }
+  .ticker { margin-top:16px; background:var(--glass); border:1px solid var(--glass-brd); border-radius:12px; overflow:hidden; display:flex; align-items:center; height:40px; }
+  .ticker .lab { background:var(--accent); color:#1a1205; font-weight:800; font-size:11px; padding:0 12px; height:100%; display:flex; align-items:center; letter-spacing:.5px; white-space:nowrap; }
+  .ticker .track { white-space:nowrap; animation:scroll 26s linear infinite; font-size:13px; color:var(--muted); padding-left:16px; }
+  @keyframes scroll { from{transform:translateX(40%);} to{transform:translateX(-100%);} }
+  .stage { display:grid; grid-template-columns:350px 1fr; gap:18px; margin-top:18px; align-items:start; }
+  @media (max-width:940px){ .stage{grid-template-columns:1fr;} }
+  .phone { background:linear-gradient(180deg,#1a1a1a,#000); border-radius:40px; padding:11px; box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06) inset; width:350px; justify-self:center; position:relative; }
+  .phone::after { content:""; position:absolute; top:20px; left:50%; transform:translateX(-50%); width:90px; height:6px; background:#000; border-radius:6px; z-index:5; }
+  .screen { background:#0b141a; border-radius:30px; overflow:hidden; height:600px; display:flex; flex-direction:column; }
+  .wa-head { background:#1f2c33; padding:14px 16px; display:flex; align-items:center; gap:11px; }
+  .wa-av { width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg,var(--wa-green),var(--cyan)); display:grid; place-items:center; font-weight:900; color:#04241d; font-size:15px; }
+  .wa-t { color:#e9edef; font-weight:600; font-size:15px; line-height:1.15; }
+  .wa-s { color:#8fd6c4; font-size:11px; display:flex; align-items:center; gap:4px; }
+  .wa-s .od { width:6px; height:6px; border-radius:50%; background:var(--cyan); }
+  .body { flex:1; padding:14px 12px; overflow-y:auto; display:flex; flex-direction:column; gap:7px; background:#0b141a; background-image:radial-gradient(rgba(255,255,255,.02) 1px,transparent 1px); background-size:18px 18px; }
+  .msg { max-width:84%; padding:8px 11px; border-radius:9px; font-size:13.5px; line-height:1.45; animation:rise .3s ease; word-wrap:break-word; }
+  @keyframes rise { from{opacity:0;transform:translateY(10px) scale(.98);} to{opacity:1;transform:none;} }
+  .in { background:#202c33; color:#e9edef; align-self:flex-start; border-top-left-radius:2px; }
+  .out { background:#005c4b; color:#e9edef; align-self:flex-end; border-top-right-radius:2px; }
+  .sys { background:rgba(45,212,191,.12); color:#9beada; align-self:center; font-size:11.5px; text-align:center; border-radius:20px; padding:5px 12px; }
+  .time { font-size:9.5px; color:rgba(255,255,255,.4); float:right; margin:5px 0 -2px 8px; }
+  .typing { align-self:flex-start; background:#202c33; padding:11px 14px; border-radius:9px; display:flex; gap:4px; }
+  .typing span { width:7px; height:7px; border-radius:50%; background:#8696a0; animation:bob 1s infinite; }
+  .typing span:nth-child(2){animation-delay:.15s;} .typing span:nth-child(3){animation-delay:.3s;}
+  @keyframes bob { 0%,60%,100%{transform:translateY(0);opacity:.4;} 30%{transform:translateY(-5px);opacity:1;} }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; padding:8px 12px; background:#0b141a; border-top:1px solid rgba(255,255,255,.05); }
+  .chip { background:#1f2c34; color:#8fd6c4; border:1px solid #2a3942; border-radius:14px; padding:6px 10px; font-size:11.5px; cursor:pointer; transition:.15s; }
+  .chip:hover { background:var(--wa-green); color:#04241d; transform:translateY(-1px); }
+  .inbar { background:#1f2c33; padding:9px 10px; display:flex; gap:8px; align-items:center; }
+  .inbar input { flex:1; background:#2a3942; border:none; border-radius:20px; padding:11px 15px; color:#e9edef; font-size:13.5px; outline:none; }
+  .inbar button { width:42px; height:42px; border-radius:50%; border:none; background:var(--wa-green); color:#04241d; font-size:17px; cursor:pointer; transition:.1s; }
+  .inbar button:active { transform:scale(.88); }
+  .right { display:flex; flex-direction:column; gap:16px; }
+  .card { background:var(--glass); border:1px solid var(--glass-brd); border-radius:18px; padding:16px 18px; backdrop-filter:blur(8px); }
+  .card h2 { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:13px; display:flex; align-items:center; gap:8px; }
+  .card h2 .n { background:linear-gradient(135deg,var(--cyan),var(--accent)); color:#04241d; width:20px; height:20px; border-radius:6px; display:grid; place-items:center; font-size:11px; font-weight:900; }
+  .pill { margin-left:auto; font-size:10px; background:rgba(45,212,191,.15); color:var(--cyan); padding:3px 9px; border-radius:20px; font-weight:600; letter-spacing:.3px; }
+  #map { width:100%; height:320px; border-radius:14px; display:block; cursor:crosshair; }
+  .map-hint { font-size:11px; color:var(--muted); margin-top:8px; text-align:center; font-style:italic; }
+  .legend { display:flex; gap:14px; margin-top:10px; font-size:11px; color:var(--muted); flex-wrap:wrap; justify-content:center; }
+  .legend span { display:inline-flex; align-items:center; gap:5px; }
+  .ld { width:10px; height:10px; border-radius:50%; }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .stat { background:rgba(255,255,255,.03); border:1px solid var(--glass-brd); border-radius:13px; padding:13px 8px; text-align:center; overflow:hidden; }
+  .stat .v { font-size:27px; font-weight:900; background:linear-gradient(135deg,var(--ink),var(--cyan)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .stat .l { font-size:10px; color:var(--muted); margin-top:2px; text-transform:uppercase; letter-spacing:.5px; }
+  .stat.bump { animation:bump .4s ease; }
+  @keyframes bump { 30%{transform:scale(1.12);} }
+  .alerts { display:flex; flex-direction:column; gap:9px; max-height:230px; overflow-y:auto; }
+  .empty { color:var(--muted); font-size:12.5px; text-align:center; padding:18px 6px; font-style:italic; }
+  .alert { border-left:3px solid var(--danger); background:rgba(255,59,92,.08); border-radius:9px; padding:10px 12px; font-size:12.5px; animation:slidein .4s cubic-bezier(.2,.8,.2,1); }
+  @keyframes slidein { from{opacity:0;transform:translateX(16px);} to{opacity:1;transform:none;} }
+  .alert .h { font-weight:800; color:#ff7a91; display:flex; align-items:center; gap:7px; margin-bottom:3px; }
+  .alert .m { color:var(--muted); font-size:10.5px; margin-top:5px; }
+  .pulse { width:8px; height:8px; border-radius:50%; background:var(--danger); animation:ping2 1.2s infinite; }
+  @keyframes ping2 { 0%{box-shadow:0 0 0 0 rgba(255,59,92,.6);} 70%{box-shadow:0 0 0 9px rgba(255,59,92,0);} }
+  .controls { display:flex; gap:8px; margin-top:6px; flex-wrap:wrap; }
+  .btn { border:1px solid var(--glass-brd); background:rgba(255,255,255,.04); color:var(--muted); padding:9px 14px; border-radius:9px; cursor:pointer; font-size:12px; transition:.15s; font-weight:600; }
+  .btn:hover { background:rgba(255,255,255,.09); color:var(--ink); }
+  .btn.primary { background:linear-gradient(135deg,var(--cyan),var(--wa-green)); color:#04241d; border:none; }
+  .btn.primary:hover { filter:brightness(1.1); }
+  .foot { text-align:center; color:#5e6f88; font-size:11.5px; margin-top:22px; }
+  .flash { position:fixed; inset:0; background:radial-gradient(circle,rgba(255,59,92,.25),transparent 70%); pointer-events:none; opacity:0; z-index:50; }
+  .flash.go { animation:flash .6s ease; }
+  @keyframes flash { 30%{opacity:1;} 100%{opacity:0;} }
+  .toast { position:fixed; top:24px; left:50%; transform:translateX(-50%) translateY(-80px); background:linear-gradient(135deg,#ff3b5c,#ff7a3b); color:#fff; padding:14px 26px; border-radius:14px; font-weight:800; font-size:14px; box-shadow:0 12px 40px rgba(255,59,92,.4); z-index:60; opacity:0; transition:.45s cubic-bezier(.2,.9,.2,1); display:flex; align-items:center; gap:10px; }
+  .toast.show { transform:translateX(-50%) translateY(0); opacity:1; }
+</style>
+</head>
+<body class="scanlines">
+<div class="flash" id="flash"></div>
+<div class="toast" id="toast">🚨 <span id="toast-text"></span></div>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="brand"><span class="pre">Pre</span><span class="ve">Ve</span><span class="ping"></span></div>
+      <div class="tagline">Sistema predictivo de seguridad para juventudes · Lima Centro</div>
+    </div>
+    <div class="live-badge"><span class="d"></span> Demo en vivo</div>
+  </header>
+  <div class="ticker">
+    <div class="lab">⚡ EN TIEMPO REAL</div>
+    <div class="track" id="ticker-track">Sistema PreVe operativo · Protección predictiva para juventudes · El motor de ML analiza patrones en rutas universidad-paradero-trabajo · Reporta 3 veces una misma zona para activar una alerta a la comunidad estudiantil ·</div>
+  </div>
+  <div class="stage">
+    <div class="phone">
+      <div class="screen">
+        <div class="wa-head">
+          <div class="wa-av">PV</div>
+          <div><div class="wa-t">PreVe Bot</div><div class="wa-s"><span class="od"></span> en línea · IA activa</div></div>
+        </div>
+        <div class="body" id="chat"></div>
+        <div class="chips" id="chips"></div>
+        <div class="inbar"><input id="input" placeholder="Escribe tu reporte..." autocomplete="off"><button id="send">➤</button></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="card">
+        <h2><span class="n">1</span> Mapa de calor en tiempo real <span class="pill">Lima Centro</span></h2>
+        <canvas id="map"></canvas>
+        <div class="map-hint">💡 Toca cualquier zona del mapa para reportar ahí, o usa el chat</div>
+        <div class="legend">
+          <span><span class="ld" style="background:var(--risk-low)"></span> Bajo</span>
+          <span><span class="ld" style="background:var(--risk-mid)"></span> Medio</span>
+          <span><span class="ld" style="background:var(--risk-high)"></span> Alto</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2><span class="n">2</span> Indicadores</h2>
+        <div class="stats">
+          <div class="stat" id="s1"><div class="v" id="stat-reports">0</div><div class="l">Reportes</div></div>
+          <div class="stat" id="s2"><div class="v" id="stat-zones">0</div><div class="l">Zonas críticas</div></div>
+          <div class="stat" id="s3"><div class="v" id="stat-alerts">0</div><div class="l">Alertas</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2><span class="n">3</span> Alertas a la comunidad</h2>
+        <div class="alerts" id="alerts">
+          <div class="empty">Sin alertas todavía. Cuando una zona acumule varios reportes, el motor de ML disparará una alerta automática aquí.</div>
+        </div>
+        <div class="controls">
+          <button class="btn primary" id="auto">▶ Simulación automática</button>
+          <button class="btn" id="reset">↺ Reiniciar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="foot">Demo conceptual con fines de presentación · Datos simulados · Proyecto PreVe — Hackathon RedPública (PNUD)</p>
+</div>
+<script>
+const ZONES=[
+  {name:"Av. Abancay",x:0.42,y:0.40,uni:true},{name:"Jr. de la Unión",x:0.30,y:0.30,uni:false},
+  {name:"Mercado Central",x:0.52,y:0.48,uni:false},{name:"UNI / Cercado",x:0.68,y:0.42,uni:true},
+  {name:"Gamarra",x:0.58,y:0.70,uni:false},{name:"UNMSM",x:0.20,y:0.50,uni:true},
+  {name:"Rímac",x:0.40,y:0.15,uni:false},{name:"UTP Breña",x:0.12,y:0.38,uni:true},
+];
+const CRIMES=["robo al paso","arrebato de celular","hurto","robo a negocio","intento de robo","robo de cartera"];
+let reports=[],alertsSent=0,alertedZones=new Set(),particles=[];
+const cv=document.getElementById('map'),ctx=cv.getContext('2d');
+function sizeCanvas(){const r=cv.getBoundingClientRect();cv.width=r.width*devicePixelRatio;cv.height=320*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);}
+function countByZone(i){return reports.filter(r=>r.zoneIdx===i).length;}
+function riskColor(n){if(n>=3)return[255,59,92];if(n>=2)return[244,163,0];return[33,196,106];}
+let _phase=0;function pulsePhase(){return 1+0.15*Math.sin(_phase);}
+function drawMap(){
+  const w=cv.width/devicePixelRatio,h=cv.height/devicePixelRatio;
+  const bg=ctx.createLinearGradient(0,0,w,h);bg.addColorStop(0,"#0e1826");bg.addColorStop(1,"#0a1320");
+  ctx.fillStyle=bg;ctx.fillRect(0,0,w,h);
+  ctx.strokeStyle="rgba(120,150,180,.10)";ctx.lineWidth=1;
+  for(let i=1;i<10;i++){ctx.beginPath();ctx.moveTo(w*i/10,0);ctx.lineTo(w*i/10,h);ctx.stroke();}
+  for(let j=1;j<7;j++){ctx.beginPath();ctx.moveTo(0,h*j/7);ctx.lineTo(w,h*j/7);ctx.stroke();}
+  ctx.strokeStyle="rgba(45,160,200,.30)";ctx.lineWidth=7;
+  ctx.beginPath();ctx.moveTo(0,h*.2);ctx.bezierCurveTo(w*.3,h*.1,w*.6,h*.28,w,h*.16);ctx.stroke();
+  ZONES.forEach((z,idx)=>{
+    const n=countByZone(idx);if(!n)return;
+    const cx=z.x*w,cy=z.y*h,[r,g,b]=riskColor(n),rad=Math.min(22+n*10,68);
+    const grd=ctx.createRadialGradient(cx,cy,2,cx,cy,rad);
+    grd.addColorStop(0,`rgba(${r},${g},${b},.85)`);grd.addColorStop(.5,`rgba(${r},${g},${b},.35)`);grd.addColorStop(1,`rgba(${r},${g},${b},0)`);
+    ctx.fillStyle=grd;ctx.beginPath();ctx.arc(cx,cy,rad,0,7);ctx.fill();
+    if(n>=3){ctx.strokeStyle=`rgba(${r},${g},${b},.5)`;ctx.lineWidth=2;ctx.beginPath();ctx.arc(cx,cy,rad*0.55*pulsePhase(),0,7);ctx.stroke();}
+    ctx.fillStyle=`rgb(${r},${g},${b})`;ctx.beginPath();ctx.arc(cx,cy,5,0,7);ctx.fill();
+    ctx.fillStyle="#dce8f2";ctx.font="600 11px sans-serif";ctx.textAlign="center";
+    const ly=cy-rad-5<12?cy+rad+15:cy-rad-5;
+    const label = z.uni ? "🎓 "+z.name : z.name;
+    ctx.fillText(label,cx,ly);
+    ctx.fillStyle="#fff";ctx.font="800 10px sans-serif";ctx.fillText(n,cx,cy+3.5);
+  });
+  particles=particles.filter(p=>p.life>0);
+  particles.forEach(p=>{p.r+=2.4;p.life-=0.04;ctx.strokeStyle=`rgba(45,212,191,${p.life})`;ctx.lineWidth=2;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);ctx.stroke();});
+  ctx.fillStyle="rgba(140,160,180,.5)";ctx.font="italic 10.5px sans-serif";ctx.textAlign="left";
+  ctx.fillText("Cercado de Lima · La Victoria · Rímac · Breña",10,h-9);
+}
+function loop(){_phase+=0.08;drawMap();requestAnimationFrame(loop);}
+const chat=document.getElementById('chat'),chipsBox=document.getElementById('chips');
+const SUGG=["Me robaron el celular saliendo de la UNMSM","Intento de robo en paradero UNI","Acoso en transporte público","Robo de laptop en UTP Breña"];
+function now(){const d=new Date();return d.getHours().toString().padStart(2,'0')+":"+d.getMinutes().toString().padStart(2,'0');}
+function addMsg(t,c){const m=document.createElement('div');m.className='msg '+c;m.innerHTML=t+(c!=='sys'?`<span class="time">${now()}</span>`:'');chat.appendChild(m);chat.scrollTop=chat.scrollHeight;return m;}
+function typing(){const d=document.createElement('div');d.className='typing';d.id='typing';d.innerHTML='<span></span><span></span><span></span>';chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
+function stopTyping(){const t=document.getElementById('typing');if(t)t.remove();}
+function renderChips(){chipsBox.innerHTML='';SUGG.forEach(s=>{const c=document.createElement('div');c.className='chip';c.textContent=s;c.onclick=()=>processReport(s);chipsBox.appendChild(c);});}
+function parse(text){
+  const l=text.toLowerCase();let zoneIdx=-1;
+  if(l.includes('abancay'))zoneIdx=0;else if(l.includes('union')||l.includes('unión'))zoneIdx=1;
+  else if(l.includes('central')||l.includes('mercado'))zoneIdx=2;
+  else if(l.includes('uni ')||l.includes('uni/')||l.includes('cercado')||l.includes('barrios altos'))zoneIdx=3;
+  else if(l.includes('gamarra')||l.includes('victoria'))zoneIdx=4;
+  else if(l.includes('unmsm')||l.includes('san marcos')||l.includes('dos de mayo'))zoneIdx=5;
+  else if(l.includes('rimac')||l.includes('rímac'))zoneIdx=6;
+  else if(l.includes('utp')||l.includes('breña')||l.includes('brena'))zoneIdx=7;
+  let crime="incidente";
+  if(l.includes('laptop'))crime="robo de laptop";
+  else if(l.includes('celular'))crime="arrebato de celular";
+  else if(l.includes('cartera'))crime="robo de cartera";
+  else if(l.includes('acoso'))crime="acoso en transporte";
+  else if(l.includes('negocio'))crime="robo a negocio";
+  else if(l.includes('intento'))crime="intento de robo";
+  else if(l.includes('hurto'))crime="hurto";else if(l.includes('robo'))crime="robo al paso";
+  return {zoneIdx,crime};
+}
+function processReport(text){
+  addMsg(text,'out');
+  const {zoneIdx,crime}=parse(text);
+  setTimeout(typing,300);
+  setTimeout(()=>{
+    stopTyping();
+    if(zoneIdx<0){addMsg("No identifiqué la zona 🤔 Menciona un lugar de Lima Centro (ej. <b>Av. Abancay</b>, <b>Gamarra</b>, <b>Barrios Altos</b>).",'in');return;}
+    const z=ZONES[zoneIdx];
+    addMsg(`<span style="color:#8fd6c4">🤖 IA analizó tu mensaje</span>`,'sys');
+    setTimeout(()=>{
+      reports.push({zoneIdx,crime,hour:now()});ripple(zoneIdx);
+      addMsg(`✅ <b>Reporte registrado</b><br>📍 <b>${z.name}</b><br>🚨 ${crime}<br>🕐 ${now()}<br><br><span style="color:#8fd6c4">Tu reporte protege a tu comunidad.</span>`,'in');
+      updateAll(zoneIdx);
+    },500);
+  },1100);
+}
+function ripple(zoneIdx){const w=cv.width/devicePixelRatio,h=cv.height/devicePixelRatio,z=ZONES[zoneIdx];particles.push({x:z.x*w,y:z.y*h,r:4,life:1});}
+function bump(id){const el=document.getElementById(id);el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump');}
+function updateAll(zoneIdx){
+  document.getElementById('stat-reports').textContent=reports.length;bump('s1');
+  const crit=ZONES.map((_,i)=>countByZone(i)).filter(n=>n>=2).length;
+  document.getElementById('stat-zones').textContent=crit;if(crit)bump('s2');
+  const n=countByZone(zoneIdx);
+  if(n>=3&&!alertedZones.has(zoneIdx)){alertedZones.add(zoneIdx);fireAlert(zoneIdx,n);}
+}
+function fireAlert(zoneIdx,n){
+  const z=ZONES[zoneIdx];alertsSent++;document.getElementById('stat-alerts').textContent=alertsSent;bump('s3');
+  const f=document.getElementById('flash');f.classList.remove('go');void f.offsetWidth;f.classList.add('go');
+  showToast(`Zona crítica detectada: ${z.name}`);
+  const box=document.getElementById('alerts');const e=box.querySelector('.empty');if(e)e.remove();
+  const a=document.createElement('div');a.className='alert';
+  a.innerHTML=`<div class="h"><span class="pulse"></span> Zona crítica detectada</div>El motor de ML agrupó <b>${n} incidentes</b> cerca de <b>${z.name}</b>.<div class="m">📲 Alerta enviada por WhatsApp a vecinos registrados · ${now()}</div>`;
+  box.prepend(a);
+  setTimeout(()=>{addMsg(`⚠️ <b>Alerta PreVe</b><br>Detectamos varios incidentes cerca de <b>${z.name}</b>. Avisamos a los vecinos de la zona para que tomen precauciones. 🛡️`,'in');},700);
+}
+function showToast(txt){const t=document.getElementById('toast');document.getElementById('toast-text').textContent=txt;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600);}
+cv.addEventListener('click',e=>{
+  const r=cv.getBoundingClientRect();const px=(e.clientX-r.left)/r.width,py=(e.clientY-r.top)/r.height;
+  let best=-1,bd=1;ZONES.forEach((z,i)=>{const d=Math.hypot(z.x-px,z.y-py);if(d<bd){bd=d;best=i;}});
+  if(best>=0&&bd<0.12){const z=ZONES[best];processReport(`Robo al paso en ${z.name}`);}
+});
+let autoTimer=null;
+document.getElementById('auto').onclick=function(){
+  if(autoTimer){clearInterval(autoTimer);autoTimer=null;this.textContent="▶ Simulación automática";return;}
+  this.textContent="⏸ Detener simulación";
+  const seq=[0,4,0,3,0,4,3,4,1,3];let i=0;
+  autoTimer=setInterval(()=>{
+    if(i>=seq.length){clearInterval(autoTimer);autoTimer=null;document.getElementById('auto').textContent="▶ Simulación automática";return;}
+    const z=ZONES[seq[i]];processReport(`Robo en ${z.name}`);i++;
+  },1800);
+};
+const input=document.getElementById('input');
+function submit(){const v=input.value.trim();if(!v)return;input.value='';processReport(v);}
+document.getElementById('send').onclick=submit;
+input.addEventListener('keydown',e=>{if(e.key==='Enter')submit();});
+document.getElementById('reset').onclick=()=>{
+  reports=[];alertsSent=0;alertedZones=new Set();particles=[];chat.innerHTML='';
+  document.getElementById('alerts').innerHTML='<div class="empty">Sin alertas todavía. Cuando una zona acumule varios reportes, el motor de ML disparará una alerta automática aquí.</div>';
+  ['stat-reports','stat-zones','stat-alerts'].forEach(id=>document.getElementById(id).textContent='0');
+  if(autoTimer){clearInterval(autoTimer);autoTimer=null;document.getElementById('auto').textContent="▶ Simulación automática";}
+  boot();
+};
+function boot(){
+  addMsg("👋 ¡Hola! Soy <b>PreVe Bot</b>. Soy el sistema predictivo de seguridad para juventudes en Lima Centro. Reporta cualquier incidente y te protegeré a ti y a tus compañeros estudiantes.",'in');
+  setTimeout(()=>addMsg("🎓 Las zonas con birrete son <b>universitarias</b>. Prueba un ejemplo de abajo, toca una zona en el mapa, o pulsa <b>Simulación automática</b>. Reporta <b>3 veces la misma zona</b> para activar una alerta. 🚨",'in'),400);
+}
+renderChips();window.addEventListener('resize',sizeCanvas);sizeCanvas();boot();loop();
+</script>
+</body>
+</html>

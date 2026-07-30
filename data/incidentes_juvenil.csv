@@ -1,0 +1,801 @@
+﻿id_incidente,distrito,tipo_delito,hora,dia_semana,latitud,longitud,iluminacion,reportes_previos_zona,cerca_universidad,cerca_paradero,horario_estudiantil,victima_joven,nivel_riesgo
+INC-0001,La Victoria,Extorsión,18,Lunes,-12.064487,-77.009125,Buena,4,0,1,1,1,Bajo
+INC-0002,Cercado de Lima,Hurto,9,Martes,-12.05062,-77.055638,Deficiente,3,1,0,1,1,Medio
+INC-0003,Jesús María,Amenazas,19,Viernes,-12.07565,-77.055529,Regular,2,1,0,1,1,Medio
+INC-0004,La Victoria,Robo al paso,20,Viernes,-12.061969,-77.017572,Buena,1,0,0,1,1,Medio
+INC-0005,Rímac,Robo de celular,6,Sábado,-12.028093,-77.033762,Buena,5,0,1,0,0,Bajo
+INC-0006,Cercado de Lima,Robo al paso,19,Miércoles,-12.041525,-77.034663,Deficiente,4,1,1,1,1,Alto
+INC-0007,La Victoria,Robo al paso,8,Miércoles,-12.068194,-77.013179,Buena,3,0,0,1,0,Bajo
+INC-0008,Rímac,Hurto,21,Sábado,-12.020669,-77.028647,Deficiente,2,0,1,0,0,Medio
+INC-0009,Cercado de Lima,Robo de laptop,17,Miércoles,-12.048135,-77.043768,Regular,6,0,0,1,1,Medio
+INC-0010,La Victoria,Robo al paso,8,Sábado,-12.069848,-77.021129,Regular,6,1,1,1,1,Alto
+INC-0011,Cercado de Lima,Robo a vivienda,21,Lunes,-12.041158,-77.052104,Regular,4,0,0,0,0,Medio
+INC-0012,Lince,Robo al paso,21,Sábado,-12.080717,-77.021165,Buena,4,0,1,0,0,Medio
+INC-0013,Lince,Acoso en transporte,21,Lunes,-12.083816,-77.034642,Buena,4,1,0,0,1,Bajo
+INC-0014,Rímac,Hurto,19,Viernes,-12.034106,-77.028825,Regular,5,1,1,1,1,Medio
+INC-0015,La Victoria,Robo al paso,18,Domingo,-12.063505,-77.019345,Deficiente,6,1,1,1,1,Alto
+INC-0016,La Victoria,Robo al paso,22,Domingo,-12.066051,-77.025458,Deficiente,9,0,1,0,0,Alto
+INC-0017,Breña,Acoso en transporte,18,Lunes,-12.067605,-77.053212,Regular,3,0,1,1,1,Bajo
+INC-0018,Cercado de Lima,Robo de laptop,21,Martes,-12.050782,-77.041501,Buena,7,0,1,0,1,Alto
+INC-0019,Cercado de Lima,Amenazas,19,Martes,-12.036432,-77.04565,Regular,7,0,0,1,0,Medio
+INC-0020,Cercado de Lima,Robo al paso,7,Lunes,-12.043737,-77.038152,Regular,3,0,0,1,0,Medio
+INC-0021,Breña,Robo al paso,18,Sábado,-12.044512,-77.056189,Buena,1,1,1,1,1,Medio
+INC-0022,La Victoria,Hurto,19,Jueves,-12.067311,-77.01507,Deficiente,2,0,0,1,1,Medio
+INC-0023,Breña,Robo al paso,17,Lunes,-12.053502,-77.044588,Deficiente,5,1,1,1,1,Medio
+INC-0024,Rímac,Robo de celular,23,Sábado,-12.019583,-77.032337,Deficiente,4,1,0,0,1,Medio
+INC-0025,Lince,Robo al paso,21,Miércoles,-12.082509,-77.042436,Regular,5,0,1,0,0,Medio
+INC-0026,La Victoria,Robo al paso,6,Viernes,-12.071333,-77.017138,Buena,4,0,1,0,1,Medio
+INC-0027,La Victoria,Acoso en transporte,19,Viernes,-12.067681,-77.030822,Deficiente,2,0,0,1,1,Alto
+INC-0028,Cercado de Lima,Hurto,23,Jueves,-12.047053,-77.04039,Buena,3,1,0,0,0,Medio
+INC-0029,La Victoria,Amenazas,8,Jueves,-12.066074,-77.009893,Regular,3,0,1,1,0,Medio
+INC-0030,La Victoria,Hurto,9,Martes,-12.079143,-77.021755,Regular,5,1,1,1,1,Medio
+INC-0031,Lince,Acoso en transporte,22,Miércoles,-12.08004,-77.029323,Deficiente,6,0,0,0,1,Medio
+INC-0032,Rímac,Acoso en transporte,20,Domingo,-12.019803,-77.027825,Deficiente,3,1,1,1,1,Alto
+INC-0033,Breña,Hurto,19,Jueves,-12.063091,-77.049611,Deficiente,4,0,1,1,0,Medio
+INC-0034,Breña,Robo al paso,10,Lunes,-12.052249,-77.060852,Regular,6,1,1,0,1,Medio
+INC-0035,Lince,Robo de laptop,8,Jueves,-12.089096,-77.029664,Buena,1,0,0,1,1,Bajo
+INC-0036,Breña,Robo al paso,15,Sábado,-12.046269,-77.052216,Buena,1,0,0,0,1,Bajo
+INC-0037,Cercado de Lima,Robo al paso,17,Jueves,-12.053587,-77.043412,Deficiente,4,0,1,1,0,Medio
+INC-0038,Cercado de Lima,Robo al paso,18,Jueves,-12.055491,-77.034599,Regular,2,1,1,1,1,Medio
+INC-0039,La Victoria,Robo al paso,15,Martes,-12.065179,-77.019721,Regular,2,1,1,0,1,Medio
+INC-0040,Rímac,Robo de laptop,7,Jueves,-12.019761,-77.026467,Regular,2,1,1,1,1,Medio
+INC-0041,Jesús María,Hurto,7,Martes,-12.076823,-77.054372,Deficiente,2,1,0,1,1,Bajo
+INC-0042,Jesús María,Robo a vivienda,19,Martes,-12.070894,-77.055265,Deficiente,4,0,1,1,1,Medio
+INC-0043,Cercado de Lima,Robo al paso,22,Lunes,-12.056369,-77.026097,Buena,2,1,0,0,0,Medio
+INC-0044,Cercado de Lima,Hurto,17,Jueves,-12.06123,-77.047581,Regular,6,0,1,1,0,Medio
+INC-0045,Rímac,Robo al paso,20,Martes,-12.031495,-77.026439,Regular,5,0,0,1,0,Medio
+INC-0046,La Victoria,Robo al paso,23,Miércoles,-12.061046,-77.018026,Regular,4,1,1,0,1,Alto
+INC-0047,Lince,Acoso en transporte,6,Viernes,-12.093802,-77.035971,Deficiente,5,0,1,0,1,Medio
+INC-0048,Cercado de Lima,Hurto,20,Viernes,-12.043919,-77.031539,Buena,4,0,1,1,1,Medio
+INC-0049,Breña,Robo de laptop,21,Viernes,-12.054245,-77.048999,Buena,7,1,1,0,1,Medio
+INC-0050,Lince,Robo a vivienda,19,Jueves,-12.092429,-77.0372,Regular,1,0,0,1,1,Bajo
+INC-0051,Lince,Robo de celular,17,Martes,-12.078886,-77.043153,Buena,6,1,0,1,0,Bajo
+INC-0052,Cercado de Lima,Robo de celular,7,Domingo,-12.03096,-77.042445,Buena,4,0,1,1,0,Bajo
+INC-0053,Cercado de Lima,Acoso en transporte,13,Miércoles,-12.039851,-77.049865,Buena,6,0,1,0,0,Medio
+INC-0054,Cercado de Lima,Robo al paso,8,Viernes,-12.049547,-77.039864,Regular,2,1,1,1,0,Alto
+INC-0055,La Victoria,Hurto,8,Lunes,-12.068257,-77.028619,Deficiente,4,0,1,1,1,Medio
+INC-0056,La Victoria,Robo de celular,10,Domingo,-12.06967,-77.016205,Deficiente,4,0,1,0,0,Medio
+INC-0057,Cercado de Lima,Robo al paso,21,Martes,-12.044315,-77.052578,Regular,3,0,1,0,0,Alto
+INC-0058,Breña,Hurto,22,Martes,-12.059549,-77.04546,Regular,2,1,0,0,1,Bajo
+INC-0059,Cercado de Lima,Robo de celular,10,Martes,-12.051703,-77.048496,Regular,3,0,1,0,1,Medio
+INC-0060,La Victoria,Hurto,23,Viernes,-12.06661,-77.007975,Regular,5,1,0,0,1,Medio
+INC-0061,Lince,Robo al paso,18,Jueves,-12.090257,-77.034119,Deficiente,5,1,1,1,1,Medio
+INC-0062,Breña,Extorsión,8,Jueves,-12.065086,-77.043981,Deficiente,7,1,0,1,1,Medio
+INC-0063,Cercado de Lima,Hurto,18,Miércoles,-12.04559,-77.034118,Regular,4,1,0,1,0,Medio
+INC-0064,La Victoria,Extorsión,21,Domingo,-12.059061,-77.022701,Regular,8,0,0,0,1,Medio
+INC-0065,Cercado de Lima,Robo al paso,5,Viernes,-12.053644,-77.036894,Deficiente,4,1,1,0,1,Alto
+INC-0066,La Victoria,Robo al paso,7,Martes,-12.063068,-77.022337,Regular,5,0,1,1,0,Medio
+INC-0067,Cercado de Lima,Acoso en transporte,8,Jueves,-12.055494,-77.047841,Deficiente,6,1,0,1,1,Alto
+INC-0068,La Victoria,Robo al paso,21,Jueves,-12.069506,-77.017257,Deficiente,6,0,1,0,0,Alto
+INC-0069,Breña,Robo a vivienda,22,Viernes,-12.055556,-77.044249,Deficiente,3,1,0,0,1,Medio
+INC-0070,Rímac,Robo al paso,23,Sábado,-12.030254,-77.02968,Buena,7,1,1,0,0,Medio
+INC-0071,La Victoria,Hurto,20,Martes,-12.065235,-77.020778,Regular,2,1,1,1,0,Alto
+INC-0072,Rímac,Robo al paso,21,Lunes,-12.019507,-77.030095,Regular,5,1,1,0,1,Medio
+INC-0073,Cercado de Lima,Hurto,20,Domingo,-12.053282,-77.03172,Regular,5,0,1,1,1,Medio
+INC-0074,Rímac,Robo de celular,18,Martes,-12.026844,-77.026959,Deficiente,4,1,1,1,1,Medio
+INC-0075,La Victoria,Robo al paso,6,Martes,-12.055594,-77.023045,Regular,4,0,0,0,0,Medio
+INC-0076,Breña,Robo al paso,20,Sábado,-12.064402,-77.050586,Buena,5,0,0,1,1,Medio
+INC-0077,Cercado de Lima,Robo de celular,7,Lunes,-12.050791,-77.032014,Deficiente,2,1,1,1,1,Medio
+INC-0078,Lince,Robo al paso,19,Viernes,-12.08654,-77.032311,Deficiente,4,1,1,1,1,Alto
+INC-0079,La Victoria,Acoso en transporte,6,Viernes,-12.069576,-77.018746,Regular,6,0,0,0,1,Medio
+INC-0080,La Victoria,Robo a vivienda,23,Viernes,-12.077586,-77.02401,Regular,4,1,1,0,0,Alto
+INC-0081,Lince,Robo de celular,9,Martes,-12.087824,-77.027541,Deficiente,3,0,1,1,1,Bajo
+INC-0082,Rímac,Robo de laptop,10,Sábado,-12.02427,-77.046791,Regular,4,1,0,0,1,Bajo
+INC-0083,Cercado de Lima,Amenazas,18,Miércoles,-12.054098,-77.044356,Buena,3,0,1,1,0,Bajo
+INC-0084,La Victoria,Robo a vivienda,23,Jueves,-12.06822,-77.016322,Buena,1,0,1,0,1,Medio
+INC-0085,Cercado de Lima,Robo de celular,21,Lunes,-12.058389,-77.041964,Deficiente,4,0,0,0,0,Medio
+INC-0086,Cercado de Lima,Hurto,21,Lunes,-12.050143,-77.031316,Deficiente,7,1,0,0,0,Alto
+INC-0087,Breña,Hurto,6,Viernes,-12.048813,-77.048484,Deficiente,3,1,1,0,0,Medio
+INC-0088,Lince,Robo de celular,17,Viernes,-12.085316,-77.032193,Deficiente,4,0,0,1,1,Bajo
+INC-0089,Breña,Robo de celular,17,Martes,-12.066539,-77.049282,Regular,6,0,0,1,1,Bajo
+INC-0090,Breña,Robo de laptop,19,Viernes,-12.055031,-77.04518,Deficiente,0,0,0,1,1,Medio
+INC-0091,Lince,Robo al paso,19,Jueves,-12.090584,-77.041623,Regular,5,0,0,1,1,Medio
+INC-0092,Breña,Robo al paso,16,Viernes,-12.057637,-77.055923,Buena,4,1,1,0,1,Bajo
+INC-0093,Rímac,Robo a vivienda,8,Miércoles,-12.036678,-77.037163,Deficiente,4,1,1,1,1,Medio
+INC-0094,Cercado de Lima,Acoso en transporte,19,Martes,-12.039052,-77.03306,Regular,5,1,1,1,1,Alto
+INC-0095,Breña,Hurto,22,Martes,-12.04883,-77.056905,Regular,2,1,0,0,1,Bajo
+INC-0096,Lince,Hurto,17,Miércoles,-12.081534,-77.043658,Deficiente,4,1,1,1,1,Medio
+INC-0097,Breña,Robo al paso,18,Viernes,-12.064023,-77.042416,Deficiente,3,1,1,1,1,Medio
+INC-0098,Rímac,Robo de laptop,18,Lunes,-12.032065,-77.02753,Deficiente,3,0,0,1,1,Bajo
+INC-0099,Lince,Robo de laptop,16,Jueves,-12.101817,-77.031382,Regular,5,0,1,0,0,Bajo
+INC-0100,Rímac,Acoso en transporte,18,Lunes,-12.036027,-77.031818,Regular,7,1,1,1,1,Medio
+INC-0101,La Victoria,Robo de celular,7,Lunes,-12.067522,-77.015553,Regular,3,1,0,1,1,Medio
+INC-0102,Breña,Robo al paso,8,Viernes,-12.062732,-77.050676,Deficiente,3,0,0,1,1,Medio
+INC-0103,Cercado de Lima,Hurto,8,Sábado,-12.046382,-77.052006,Regular,4,0,0,1,1,Medio
+INC-0104,Rímac,Acoso en transporte,22,Lunes,-12.032359,-77.045246,Buena,3,0,0,0,1,Bajo
+INC-0105,Jesús María,Acoso en transporte,19,Jueves,-12.074086,-77.042221,Buena,3,0,0,1,1,Bajo
+INC-0106,La Victoria,Acoso en transporte,20,Domingo,-12.070414,-77.012361,Regular,3,1,1,1,1,Alto
+INC-0107,Breña,Robo a vivienda,19,Jueves,-12.05759,-77.04754,Regular,2,1,0,1,1,Medio
+INC-0108,Cercado de Lima,Extorsión,19,Miércoles,-12.052286,-77.050768,Deficiente,3,1,1,1,1,Alto
+INC-0109,Cercado de Lima,Robo al paso,22,Viernes,-12.050941,-77.050316,Buena,4,1,1,0,1,Alto
+INC-0110,Jesús María,Hurto,17,Viernes,-12.07067,-77.042965,Buena,4,0,1,1,0,Bajo
+INC-0111,Cercado de Lima,Robo al paso,8,Martes,-12.041506,-77.040975,Deficiente,8,0,1,1,0,Alto
+INC-0112,Cercado de Lima,Robo al paso,8,Viernes,-12.049572,-77.039282,Regular,6,1,1,1,1,Alto
+INC-0113,Rímac,Robo al paso,18,Sábado,-12.034003,-77.028136,Deficiente,4,0,1,1,1,Medio
+INC-0114,Rímac,Robo al paso,18,Miércoles,-12.034225,-77.032325,Regular,8,1,0,1,1,Medio
+INC-0115,La Victoria,Acoso en transporte,7,Viernes,-12.051051,-77.017841,Regular,7,0,0,1,0,Medio
+INC-0116,Breña,Acoso en transporte,17,Miércoles,-12.061191,-77.055616,Regular,2,1,1,1,0,Medio
+INC-0117,Breña,Robo de celular,20,Miércoles,-12.05703,-77.052533,Regular,3,0,0,1,0,Bajo
+INC-0118,Cercado de Lima,Robo de laptop,9,Domingo,-12.049196,-77.052368,Deficiente,5,0,1,1,1,Medio
+INC-0119,La Victoria,Hurto,21,Lunes,-12.072987,-77.014004,Deficiente,1,0,0,0,1,Medio
+INC-0120,Lince,Robo al paso,9,Viernes,-12.079944,-77.038027,Buena,1,0,1,1,1,Bajo
+INC-0121,La Victoria,Robo de celular,18,Jueves,-12.065876,-77.027975,Deficiente,5,1,1,1,1,Medio
+INC-0122,Cercado de Lima,Robo al paso,7,Martes,-12.045197,-77.035908,Regular,3,1,1,1,1,Medio
+INC-0123,La Victoria,Robo de celular,7,Miércoles,-12.05434,-77.014885,Buena,3,1,0,1,1,Bajo
+INC-0124,Cercado de Lima,Robo de celular,23,Jueves,-12.044462,-77.044314,Deficiente,5,0,1,0,0,Alto
+INC-0125,La Victoria,Robo de laptop,9,Miércoles,-12.063367,-77.01792,Buena,7,1,1,1,1,Medio
+INC-0126,Rímac,Robo a vivienda,5,Domingo,-12.030909,-77.032122,Buena,5,1,1,0,1,Bajo
+INC-0127,Jesús María,Robo de celular,23,Martes,-12.065306,-77.050523,Buena,0,1,1,0,0,Bajo
+INC-0128,Lince,Robo al paso,22,Martes,-12.087274,-77.034575,Regular,5,0,1,0,1,Medio
+INC-0129,Cercado de Lima,Hurto,20,Lunes,-12.048601,-77.046776,Deficiente,7,1,0,1,1,Alto
+INC-0130,Cercado de Lima,Robo al paso,16,Martes,-12.049455,-77.038135,Regular,4,0,1,0,0,Medio
+INC-0131,Lince,Acoso en transporte,18,Sábado,-12.083895,-77.032365,Buena,6,0,0,1,0,Bajo
+INC-0132,Lince,Robo al paso,23,Martes,-12.087724,-77.034498,Deficiente,0,1,1,0,1,Medio
+INC-0133,Rímac,Robo al paso,21,Jueves,-12.032775,-77.031041,Buena,4,1,0,0,0,Bajo
+INC-0134,Rímac,Hurto,17,Sábado,-12.024494,-77.033596,Buena,4,1,1,1,1,Bajo
+INC-0135,Cercado de Lima,Robo a vivienda,22,Miércoles,-12.030275,-77.046724,Deficiente,7,0,0,0,1,Alto
+INC-0136,La Victoria,Hurto,17,Jueves,-12.066138,-77.00843,Regular,1,0,1,1,1,Medio
+INC-0137,Cercado de Lima,Robo al paso,20,Martes,-12.058807,-77.051828,Buena,1,0,0,1,1,Medio
+INC-0138,Cercado de Lima,Robo de celular,22,Jueves,-12.057651,-77.04211,Deficiente,3,0,1,0,0,Alto
+INC-0139,La Victoria,Hurto,20,Miércoles,-12.070317,-77.029419,Deficiente,6,1,0,1,1,Alto
+INC-0140,Cercado de Lima,Hurto,17,Lunes,-12.051394,-77.056055,Regular,3,0,0,1,0,Bajo
+INC-0141,Breña,Hurto,18,Viernes,-12.058487,-77.04906,Deficiente,3,0,0,1,1,Bajo
+INC-0142,La Victoria,Robo al paso,19,Jueves,-12.078156,-77.014204,Deficiente,6,1,1,1,1,Alto
+INC-0143,Rímac,Robo a vivienda,17,Jueves,-12.033059,-77.021874,Deficiente,4,1,0,1,1,Bajo
+INC-0144,Cercado de Lima,Hurto,17,Miércoles,-12.047304,-77.047083,Regular,5,1,0,1,1,Medio
+INC-0145,Cercado de Lima,Robo de laptop,20,Lunes,-12.047058,-77.049389,Buena,4,1,0,1,1,Medio
+INC-0146,Breña,Acoso en transporte,20,Martes,-12.059244,-77.047614,Regular,3,0,1,1,0,Medio
+INC-0147,La Victoria,Robo al paso,6,Domingo,-12.07159,-77.030476,Regular,4,1,1,0,1,Medio
+INC-0148,La Victoria,Hurto,9,Miércoles,-12.066581,-77.022006,Regular,6,1,0,1,1,Medio
+INC-0149,Cercado de Lima,Robo a vivienda,20,Domingo,-12.053436,-77.036044,Regular,3,0,1,1,1,Medio
+INC-0150,La Victoria,Robo a vivienda,20,Miércoles,-12.063273,-77.014729,Regular,3,0,1,1,0,Medio
+INC-0151,Cercado de Lima,Robo a vivienda,22,Domingo,-12.045246,-77.042912,Regular,4,1,0,0,1,Medio
+INC-0152,Jesús María,Robo al paso,20,Viernes,-12.077114,-77.04426,Buena,8,1,0,1,1,Medio
+INC-0153,Cercado de Lima,Robo de celular,18,Lunes,-12.049691,-77.054162,Buena,3,0,1,1,1,Bajo
+INC-0154,Cercado de Lima,Robo al paso,21,Domingo,-12.041423,-77.043963,Regular,5,1,0,0,0,Medio
+INC-0155,La Victoria,Robo de celular,17,Viernes,-12.065265,-77.013757,Deficiente,5,0,0,1,1,Medio
+INC-0156,Breña,Robo al paso,19,Miércoles,-12.058599,-77.050356,Buena,2,1,0,1,1,Medio
+INC-0157,Rímac,Robo de celular,5,Sábado,-12.033816,-77.023535,Deficiente,4,1,1,0,1,Medio
+INC-0158,Breña,Hurto,7,Martes,-12.052808,-77.042883,Deficiente,4,1,1,1,1,Medio
+INC-0159,La Victoria,Extorsión,15,Martes,-12.080177,-77.027027,Buena,6,1,0,0,1,Bajo
+INC-0160,Breña,Robo al paso,5,Viernes,-12.063818,-77.043547,Regular,4,0,0,0,1,Medio
+INC-0161,La Victoria,Robo al paso,20,Jueves,-12.072366,-77.013926,Regular,0,0,1,1,1,Alto
+INC-0162,Breña,Robo de celular,16,Viernes,-12.055969,-77.050182,Buena,0,1,1,0,1,Bajo
+INC-0163,Cercado de Lima,Robo al paso,8,Miércoles,-12.037106,-77.036868,Deficiente,2,1,1,1,1,Alto
+INC-0164,La Victoria,Robo al paso,5,Martes,-12.06702,-77.028459,Deficiente,6,1,0,0,1,Alto
+INC-0165,Cercado de Lima,Robo al paso,9,Jueves,-12.043054,-77.040846,Regular,5,0,1,1,0,Medio
+INC-0166,Cercado de Lima,Robo al paso,7,Viernes,-12.052934,-77.043735,Deficiente,4,0,1,1,1,Alto
+INC-0167,La Victoria,Robo de celular,7,Martes,-12.073793,-77.021175,Deficiente,7,1,0,1,1,Medio
+INC-0168,Jesús María,Robo al paso,22,Sábado,-12.071345,-77.049285,Deficiente,3,1,1,0,1,Alto
+INC-0169,La Victoria,Acoso en transporte,19,Martes,-12.067645,-77.026102,Regular,4,0,1,1,1,Alto
+INC-0170,Cercado de Lima,Robo de celular,22,Domingo,-12.054465,-77.05242,Deficiente,7,1,0,0,1,Alto
+INC-0171,Lince,Robo al paso,17,Domingo,-12.084782,-77.045641,Regular,7,1,1,1,1,Medio
+INC-0172,Cercado de Lima,Hurto,10,Miércoles,-12.048597,-77.040137,Buena,3,1,1,0,1,Bajo
+INC-0173,Breña,Acoso en transporte,17,Miércoles,-12.056682,-77.046159,Buena,4,0,1,1,0,Bajo
+INC-0174,Cercado de Lima,Hurto,15,Sábado,-12.056755,-77.046865,Regular,8,1,1,0,1,Medio
+INC-0175,La Victoria,Hurto,8,Domingo,-12.05799,-77.028131,Deficiente,4,1,1,1,1,Medio
+INC-0176,Breña,Robo de celular,22,Viernes,-12.054604,-77.04777,Buena,3,1,1,0,0,Medio
+INC-0177,Rímac,Robo de laptop,16,Martes,-12.029349,-77.025527,Regular,2,1,1,0,1,Bajo
+INC-0178,Cercado de Lima,Hurto,22,Jueves,-12.035485,-77.04256,Deficiente,4,1,0,0,1,Medio
+INC-0179,Cercado de Lima,Robo a vivienda,19,Viernes,-12.041767,-77.035528,Deficiente,0,1,0,1,1,Alto
+INC-0180,Cercado de Lima,Robo al paso,18,Viernes,-12.039094,-77.048011,Regular,2,0,1,1,1,Medio
+INC-0181,Cercado de Lima,Robo de celular,23,Viernes,-12.03952,-77.044959,Deficiente,2,0,1,0,1,Alto
+INC-0182,La Victoria,Robo al paso,18,Lunes,-12.057318,-77.02228,Deficiente,3,0,1,1,1,Medio
+INC-0183,Cercado de Lima,Hurto,19,Lunes,-12.045339,-77.0433,Buena,4,1,0,1,1,Medio
+INC-0184,Breña,Hurto,18,Martes,-12.052494,-77.048671,Deficiente,1,1,1,1,0,Medio
+INC-0185,Cercado de Lima,Robo de laptop,19,Lunes,-12.036228,-77.051987,Regular,6,0,1,1,1,Alto
+INC-0186,Rímac,Extorsión,19,Martes,-12.018835,-77.032655,Buena,5,0,1,1,0,Bajo
+INC-0187,Cercado de Lima,Robo al paso,6,Lunes,-12.051391,-77.03257,Regular,7,0,1,0,0,Medio
+INC-0188,Rímac,Robo de laptop,7,Miércoles,-12.027977,-77.025101,Regular,6,0,1,1,1,Medio
+INC-0189,La Victoria,Hurto,20,Lunes,-12.077041,-77.018448,Buena,4,1,0,1,1,Medio
+INC-0190,Cercado de Lima,Robo al paso,5,Viernes,-12.045586,-77.041811,Regular,2,0,1,0,0,Alto
+INC-0191,La Victoria,Robo de celular,19,Sábado,-12.060367,-77.019353,Regular,4,1,1,1,1,Alto
+INC-0192,Rímac,Hurto,21,Sábado,-12.031236,-77.020155,Regular,3,0,0,0,1,Medio
+INC-0193,Cercado de Lima,Hurto,18,Lunes,-12.04607,-77.044486,Regular,2,1,0,1,1,Medio
+INC-0194,La Victoria,Robo al paso,8,Domingo,-12.060272,-77.006069,Regular,5,0,1,1,0,Medio
+INC-0195,La Victoria,Robo al paso,20,Lunes,-12.071137,-77.024575,Regular,4,1,0,1,1,Alto
+INC-0196,La Victoria,Hurto,22,Martes,-12.058933,-77.017808,Deficiente,5,1,1,0,1,Alto
+INC-0197,Cercado de Lima,Robo de celular,20,Lunes,-12.046052,-77.044454,Regular,3,0,1,1,1,Medio
+INC-0198,Jesús María,Robo de laptop,20,Martes,-12.081426,-77.058225,Buena,5,0,1,1,1,Medio
+INC-0199,Cercado de Lima,Acoso en transporte,19,Viernes,-12.045908,-77.03442,Deficiente,5,0,0,1,0,Alto
+INC-0200,Rímac,Robo a vivienda,21,Jueves,-12.024195,-77.027836,Regular,4,0,0,0,1,Bajo
+INC-0201,Cercado de Lima,Robo de celular,18,Lunes,-12.046214,-77.048247,Deficiente,6,0,0,1,1,Medio
+INC-0202,Breña,Robo al paso,21,Martes,-12.052333,-77.047077,Deficiente,2,1,0,0,1,Medio
+INC-0203,Cercado de Lima,Robo al paso,7,Jueves,-12.043451,-77.042228,Regular,9,0,1,1,1,Medio
+INC-0204,Rímac,Acoso en transporte,20,Domingo,-12.035,-77.031164,Buena,5,0,1,1,1,Medio
+INC-0205,Rímac,Robo al paso,23,Viernes,-12.01678,-77.028204,Regular,6,1,1,0,1,Alto
+INC-0206,La Victoria,Robo al paso,23,Domingo,-12.059689,-77.015304,Deficiente,2,1,1,0,1,Alto
+INC-0207,Jesús María,Robo al paso,20,Viernes,-12.067434,-77.053855,Regular,6,0,1,1,0,Alto
+INC-0208,Breña,Robo a vivienda,20,Domingo,-12.064482,-77.031928,Regular,4,1,0,1,1,Medio
+INC-0209,Cercado de Lima,Robo de celular,9,Sábado,-12.044832,-77.049584,Deficiente,6,1,1,1,0,Alto
+INC-0210,La Victoria,Robo a vivienda,8,Miércoles,-12.064342,-77.016749,Deficiente,2,0,0,1,1,Medio
+INC-0211,Cercado de Lima,Robo al paso,5,Viernes,-12.049177,-77.050019,Buena,2,1,0,0,1,Medio
+INC-0212,Rímac,Robo al paso,16,Sábado,-12.040409,-77.030601,Regular,4,1,0,0,1,Bajo
+INC-0213,Cercado de Lima,Robo de celular,16,Viernes,-12.060332,-77.031805,Deficiente,7,0,1,0,0,Alto
+INC-0214,La Victoria,Robo a vivienda,19,Sábado,-12.076623,-77.024147,Regular,3,0,1,1,0,Alto
+INC-0215,La Victoria,Hurto,4,Viernes,-12.061217,-77.017299,Buena,2,1,0,0,0,Medio
+INC-0216,Jesús María,Robo de laptop,6,Miércoles,-12.077094,-77.042229,Buena,5,0,1,0,1,Bajo
+INC-0217,Cercado de Lima,Robo al paso,22,Viernes,-12.039026,-77.043651,Regular,3,0,0,0,1,Alto
+INC-0218,Lince,Robo de celular,16,Viernes,-12.089168,-77.043684,Regular,6,0,0,0,0,Bajo
+INC-0219,Breña,Extorsión,17,Lunes,-12.058589,-77.062805,Deficiente,1,0,0,1,1,Bajo
+INC-0220,Rímac,Robo al paso,23,Martes,-12.031397,-77.03648,Deficiente,4,1,1,0,0,Medio
+INC-0221,La Victoria,Robo al paso,8,Viernes,-12.058625,-77.022816,Buena,7,1,1,1,1,Alto
+INC-0222,Cercado de Lima,Robo al paso,18,Lunes,-12.040452,-77.03657,Regular,3,0,0,1,1,Medio
+INC-0223,Rímac,Extorsión,8,Lunes,-12.030043,-77.036272,Deficiente,4,1,1,1,1,Medio
+INC-0224,Lince,Acoso en transporte,21,Lunes,-12.094593,-77.025916,Regular,6,0,0,0,1,Medio
+INC-0225,Rímac,Robo al paso,17,Jueves,-12.02728,-77.025018,Regular,2,1,0,1,1,Bajo
+INC-0226,Breña,Extorsión,17,Jueves,-12.054205,-77.048568,Regular,1,1,1,1,1,Bajo
+INC-0227,La Victoria,Robo de celular,8,Viernes,-12.070477,-77.018168,Regular,1,1,0,1,0,Medio
+INC-0228,Rímac,Amenazas,7,Domingo,-12.040347,-77.034862,Buena,2,0,1,1,1,Bajo
+INC-0229,La Victoria,Robo de celular,20,Miércoles,-12.058445,-77.011679,Regular,1,0,1,1,0,Medio
+INC-0230,Cercado de Lima,Robo de celular,19,Sábado,-12.051153,-77.056218,Regular,5,0,1,1,1,Alto
+INC-0231,Breña,Amenazas,17,Miércoles,-12.057577,-77.0487,Deficiente,2,1,1,1,0,Medio
+INC-0232,Rímac,Hurto,16,Martes,-12.030631,-77.034403,Regular,3,0,0,0,0,Bajo
+INC-0233,Cercado de Lima,Robo de celular,8,Martes,-12.040291,-77.03227,Deficiente,8,1,1,1,1,Alto
+INC-0234,Rímac,Robo al paso,21,Jueves,-12.030293,-77.022712,Regular,5,1,0,0,1,Medio
+INC-0235,Cercado de Lima,Robo al paso,20,Viernes,-12.043882,-77.034952,Deficiente,5,1,1,1,1,Alto
+INC-0236,Cercado de Lima,Extorsión,6,Viernes,-12.05069,-77.048971,Regular,2,0,1,0,0,Medio
+INC-0237,Cercado de Lima,Robo de celular,6,Martes,-12.044334,-77.039853,Deficiente,2,1,0,0,1,Medio
+INC-0238,Breña,Robo al paso,20,Martes,-12.058019,-77.053323,Regular,6,0,0,1,1,Medio
+INC-0239,Rímac,Acoso en transporte,8,Domingo,-12.032192,-77.030364,Regular,2,1,0,1,1,Bajo
+INC-0240,La Victoria,Robo de celular,16,Jueves,-12.064887,-77.025716,Deficiente,2,0,0,0,1,Medio
+INC-0241,Breña,Robo al paso,10,Martes,-12.063757,-77.058203,Deficiente,4,1,1,0,1,Medio
+INC-0242,Rímac,Robo de celular,9,Viernes,-12.020491,-77.03655,Buena,2,1,1,1,1,Bajo
+INC-0243,Breña,Robo de laptop,20,Jueves,-12.069556,-77.05951,Regular,8,1,0,1,1,Medio
+INC-0244,Jesús María,Robo al paso,5,Viernes,-12.070382,-77.051777,Buena,5,1,1,0,1,Medio
+INC-0245,La Victoria,Robo de celular,6,Viernes,-12.062071,-77.014888,Deficiente,1,0,1,0,0,Medio
+INC-0246,Cercado de Lima,Acoso en transporte,16,Jueves,-12.047654,-77.039599,Regular,0,0,0,0,1,Medio
+INC-0247,Breña,Robo de celular,17,Viernes,-12.063822,-77.049192,Regular,2,1,0,1,0,Bajo
+INC-0248,La Victoria,Robo al paso,22,Martes,-12.054991,-77.017131,Deficiente,5,0,0,0,0,Alto
+INC-0249,Breña,Hurto,6,Viernes,-12.051563,-77.06212,Buena,4,0,1,0,0,Bajo
+INC-0250,Cercado de Lima,Robo al paso,22,Miércoles,-12.039379,-77.041994,Deficiente,3,0,1,0,1,Alto
+INC-0251,Cercado de Lima,Robo al paso,18,Jueves,-12.044752,-77.035138,Regular,4,0,1,1,1,Medio
+INC-0252,La Victoria,Hurto,21,Viernes,-12.066401,-77.0121,Deficiente,2,0,1,0,0,Alto
+INC-0253,Rímac,Robo al paso,11,Jueves,-12.032753,-77.028523,Regular,3,0,1,0,1,Bajo
+INC-0254,Cercado de Lima,Hurto,19,Sábado,-12.036861,-77.039356,Regular,5,1,0,1,1,Alto
+INC-0255,Cercado de Lima,Acoso en transporte,23,Miércoles,-12.053449,-77.044506,Regular,3,1,0,0,1,Medio
+INC-0256,Cercado de Lima,Robo de laptop,10,Viernes,-12.05332,-77.052924,Buena,6,1,1,0,1,Medio
+INC-0257,Jesús María,Robo al paso,21,Miércoles,-12.063057,-77.0544,Regular,3,1,1,0,0,Medio
+INC-0258,La Victoria,Robo de celular,20,Jueves,-12.065656,-77.02335,Deficiente,2,0,1,1,0,Alto
+INC-0259,Cercado de Lima,Extorsión,23,Lunes,-12.044497,-77.029171,Deficiente,6,1,0,0,1,Alto
+INC-0260,La Victoria,Robo de laptop,20,Viernes,-12.058125,-77.0191,Deficiente,2,1,0,1,1,Alto
+INC-0261,La Victoria,Hurto,18,Sábado,-12.069937,-77.026356,Regular,4,1,1,1,0,Medio
+INC-0262,Breña,Acoso en transporte,17,Miércoles,-12.058289,-77.046839,Regular,3,0,1,1,0,Bajo
+INC-0263,La Victoria,Robo al paso,20,Martes,-12.07123,-77.021703,Regular,2,0,0,1,0,Medio
+INC-0264,Cercado de Lima,Robo de laptop,7,Lunes,-12.036226,-77.031416,Deficiente,3,0,0,1,1,Medio
+INC-0265,Breña,Robo al paso,20,Lunes,-12.053674,-77.050848,Buena,6,0,1,1,1,Medio
+INC-0266,Cercado de Lima,Hurto,20,Miércoles,-12.062245,-77.044741,Buena,2,1,1,1,1,Medio
+INC-0267,Cercado de Lima,Robo de celular,8,Jueves,-12.040159,-77.037907,Buena,5,1,0,1,1,Bajo
+INC-0268,La Victoria,Amenazas,7,Viernes,-12.059075,-77.023861,Regular,5,0,1,1,1,Medio
+INC-0269,La Victoria,Robo de laptop,21,Miércoles,-12.07137,-77.022091,Regular,5,0,1,0,1,Alto
+INC-0270,Cercado de Lima,Acoso en transporte,6,Miércoles,-12.044415,-77.034094,Buena,6,0,1,0,0,Medio
+INC-0271,La Victoria,Robo al paso,5,Viernes,-12.066594,-77.018215,Deficiente,2,1,1,0,1,Alto
+INC-0272,La Victoria,Robo a vivienda,7,Lunes,-12.065026,-77.012154,Deficiente,6,0,0,1,1,Medio
+INC-0273,Cercado de Lima,Robo de laptop,21,Lunes,-12.053737,-77.051735,Buena,2,1,1,0,1,Medio
+INC-0274,Lince,Robo al paso,8,Sábado,-12.075078,-77.045277,Regular,6,0,1,1,1,Medio
+INC-0275,Cercado de Lima,Robo al paso,23,Martes,-12.046396,-77.038049,Regular,5,1,1,0,1,Alto
+INC-0276,Jesús María,Robo de celular,9,Viernes,-12.070713,-77.039665,Buena,5,0,0,1,1,Bajo
+INC-0277,Rímac,Robo a vivienda,19,Sábado,-12.027299,-77.038749,Buena,2,0,1,1,0,Medio
+INC-0278,Cercado de Lima,Robo a vivienda,18,Viernes,-12.043731,-77.047754,Deficiente,5,0,1,1,0,Medio
+INC-0279,Cercado de Lima,Extorsión,20,Sábado,-12.041747,-77.043653,Deficiente,4,1,0,1,1,Alto
+INC-0280,Breña,Robo de celular,21,Miércoles,-12.056567,-77.052305,Regular,5,1,1,0,1,Medio
+INC-0281,Rímac,Hurto,22,Viernes,-12.030791,-77.031026,Deficiente,4,0,1,0,1,Medio
+INC-0282,Rímac,Robo de celular,6,Lunes,-12.026356,-77.029463,Regular,5,0,0,0,0,Bajo
+INC-0283,Cercado de Lima,Robo al paso,17,Miércoles,-12.035925,-77.046532,Deficiente,5,0,1,1,0,Medio
+INC-0284,La Victoria,Extorsión,19,Lunes,-12.068623,-77.026688,Buena,0,1,1,1,1,Medio
+INC-0285,Cercado de Lima,Robo al paso,8,Miércoles,-12.045392,-77.042597,Regular,4,1,0,1,1,Medio
+INC-0286,Cercado de Lima,Robo al paso,16,Sábado,-12.050554,-77.054614,Regular,3,1,1,0,0,Medio
+INC-0287,La Victoria,Amenazas,21,Domingo,-12.076154,-77.024452,Buena,5,0,0,0,1,Medio
+INC-0288,Cercado de Lima,Robo al paso,20,Martes,-12.057387,-77.050171,Deficiente,3,1,0,1,1,Alto
+INC-0289,Cercado de Lima,Robo de celular,7,Viernes,-12.044668,-77.041714,Buena,5,0,1,1,0,Medio
+INC-0290,Lince,Acoso en transporte,23,Martes,-12.09486,-77.042495,Regular,4,0,1,0,0,Medio
+INC-0291,Rímac,Hurto,6,Miércoles,-12.028314,-77.032721,Buena,3,0,0,0,0,Bajo
+INC-0292,Cercado de Lima,Acoso en transporte,7,Domingo,-12.038511,-77.046193,Regular,2,1,1,1,1,Medio
+INC-0293,Breña,Acoso en transporte,6,Viernes,-12.065248,-77.056121,Regular,3,0,0,0,0,Bajo
+INC-0294,Breña,Hurto,17,Sábado,-12.0595,-77.058899,Deficiente,2,0,1,1,1,Medio
+INC-0295,Breña,Robo de celular,5,Miércoles,-12.055052,-77.053517,Deficiente,0,0,0,0,1,Medio
+INC-0296,Lince,Robo al paso,20,Martes,-12.086983,-77.026478,Deficiente,3,1,0,1,1,Medio
+INC-0297,Rímac,Robo de celular,22,Sábado,-12.019843,-77.038896,Deficiente,6,1,1,0,0,Alto
+INC-0298,Rímac,Robo de celular,18,Sábado,-12.021738,-77.033032,Deficiente,5,0,1,1,1,Medio
+INC-0299,Rímac,Robo de celular,22,Jueves,-12.033321,-77.033626,Deficiente,6,1,1,0,0,Medio
+INC-0300,Cercado de Lima,Robo de celular,6,Martes,-12.040638,-77.040025,Regular,7,1,0,0,0,Medio
+INC-0301,Cercado de Lima,Robo de celular,17,Jueves,-12.037367,-77.045273,Deficiente,3,0,0,1,0,Medio
+INC-0302,La Victoria,Hurto,9,Martes,-12.066958,-77.020037,Regular,8,1,0,1,1,Medio
+INC-0303,La Victoria,Robo de laptop,20,Jueves,-12.073014,-77.018138,Regular,5,0,1,1,1,Alto
+INC-0304,Rímac,Robo al paso,8,Miércoles,-12.033462,-77.018105,Buena,7,0,0,1,0,Bajo
+INC-0305,Cercado de Lima,Robo de laptop,19,Domingo,-12.046587,-77.028455,Buena,2,0,1,1,1,Medio
+INC-0306,Cercado de Lima,Robo de laptop,21,Lunes,-12.05231,-77.041608,Buena,2,0,1,0,0,Medio
+INC-0307,Cercado de Lima,Robo de celular,11,Jueves,-12.054942,-77.050212,Buena,6,1,0,0,1,Bajo
+INC-0308,La Victoria,Robo de celular,18,Martes,-12.063298,-77.019929,Buena,5,1,1,1,1,Medio
+INC-0309,Cercado de Lima,Robo al paso,23,Lunes,-12.056197,-77.040038,Regular,5,1,1,0,1,Alto
+INC-0310,Cercado de Lima,Robo al paso,21,Viernes,-12.053535,-77.036476,Buena,4,0,1,0,1,Alto
+INC-0311,Jesús María,Robo al paso,8,Miércoles,-12.078089,-77.051582,Buena,4,1,0,1,0,Bajo
+INC-0312,Cercado de Lima,Extorsión,21,Domingo,-12.052992,-77.034277,Deficiente,5,1,1,0,1,Alto
+INC-0313,La Victoria,Robo al paso,20,Miércoles,-12.069359,-77.019802,Deficiente,4,0,1,1,1,Alto
+INC-0314,Cercado de Lima,Robo al paso,18,Martes,-12.05335,-77.052889,Buena,5,1,1,1,1,Medio
+INC-0315,Cercado de Lima,Hurto,20,Domingo,-12.048729,-77.0424,Deficiente,8,0,1,1,1,Alto
+INC-0316,Cercado de Lima,Robo de laptop,13,Sábado,-12.043241,-77.045664,Regular,3,0,1,0,1,Medio
+INC-0317,Cercado de Lima,Robo al paso,7,Martes,-12.037351,-77.045705,Deficiente,5,1,1,1,1,Alto
+INC-0318,Cercado de Lima,Hurto,6,Martes,-12.049273,-77.040643,Regular,2,1,0,0,0,Bajo
+INC-0319,Lince,Robo de celular,14,Sábado,-12.091875,-77.038237,Regular,6,1,0,0,1,Bajo
+INC-0320,La Victoria,Amenazas,9,Jueves,-12.063436,-77.035728,Buena,2,1,1,1,1,Medio
+INC-0321,La Victoria,Robo a vivienda,8,Lunes,-12.06305,-77.020635,Regular,6,1,1,1,1,Medio
+INC-0322,Breña,Robo al paso,15,Viernes,-12.056941,-77.050249,Regular,4,0,1,0,0,Medio
+INC-0323,Rímac,Robo de laptop,17,Martes,-12.024708,-77.040002,Buena,6,1,1,1,1,Medio
+INC-0324,Breña,Robo de celular,8,Miércoles,-12.052614,-77.052021,Buena,7,0,1,1,1,Bajo
+INC-0325,Rímac,Robo al paso,5,Miércoles,-12.036226,-77.041831,Buena,6,1,1,0,1,Medio
+INC-0326,Cercado de Lima,Hurto,7,Jueves,-12.051346,-77.0387,Deficiente,2,0,0,1,0,Medio
+INC-0327,Cercado de Lima,Robo al paso,19,Lunes,-12.033286,-77.048708,Buena,4,1,1,1,0,Alto
+INC-0328,Cercado de Lima,Robo al paso,17,Martes,-12.037202,-77.042604,Deficiente,4,1,0,1,1,Medio
+INC-0329,Cercado de Lima,Hurto,22,Martes,-12.049935,-77.032603,Regular,5,1,1,0,1,Medio
+INC-0330,La Victoria,Robo de celular,17,Sábado,-12.05471,-77.012449,Regular,1,0,0,1,1,Medio
+INC-0331,La Victoria,Robo de celular,6,Domingo,-12.067048,-77.016175,Buena,6,1,1,0,1,Medio
+INC-0332,Cercado de Lima,Hurto,9,Miércoles,-12.044023,-77.05365,Buena,3,0,1,1,1,Bajo
+INC-0333,La Victoria,Robo al paso,21,Viernes,-12.065343,-77.021037,Regular,6,1,0,0,0,Alto
+INC-0334,Cercado de Lima,Robo al paso,19,Lunes,-12.03992,-77.037143,Deficiente,6,1,1,1,0,Alto
+INC-0335,La Victoria,Robo al paso,19,Miércoles,-12.061143,-77.019226,Regular,4,1,0,1,1,Alto
+INC-0336,La Victoria,Hurto,19,Viernes,-12.071804,-77.025397,Buena,2,1,1,1,1,Alto
+INC-0337,La Victoria,Robo al paso,19,Miércoles,-12.062225,-77.016735,Buena,4,1,1,1,1,Alto
+INC-0338,La Victoria,Robo al paso,17,Jueves,-12.06937,-77.021585,Buena,3,0,1,1,0,Medio
+INC-0339,Cercado de Lima,Robo de celular,19,Jueves,-12.038008,-77.037741,Buena,2,1,1,1,0,Medio
+INC-0340,Breña,Robo al paso,9,Sábado,-12.047397,-77.042841,Deficiente,5,1,0,1,0,Medio
+INC-0341,Cercado de Lima,Robo de laptop,6,Martes,-12.04308,-77.037616,Buena,4,1,0,0,1,Bajo
+INC-0342,Breña,Hurto,20,Martes,-12.071618,-77.057465,Deficiente,3,0,1,1,1,Medio
+INC-0343,Lince,Robo al paso,20,Domingo,-12.085965,-77.043522,Buena,2,0,1,1,0,Medio
+INC-0344,Cercado de Lima,Robo al paso,23,Martes,-12.03832,-77.050367,Regular,4,0,1,0,0,Alto
+INC-0345,Rímac,Amenazas,9,Domingo,-12.021701,-77.025245,Buena,6,1,1,1,0,Bajo
+INC-0346,Cercado de Lima,Robo a vivienda,19,Martes,-12.047165,-77.044226,Deficiente,4,0,1,1,1,Alto
+INC-0347,Rímac,Robo al paso,23,Lunes,-12.038547,-77.024949,Deficiente,5,1,0,0,0,Medio
+INC-0348,Jesús María,Robo al paso,7,Lunes,-12.069046,-77.052907,Regular,4,0,1,1,0,Bajo
+INC-0349,Cercado de Lima,Robo al paso,8,Domingo,-12.052307,-77.035432,Regular,5,0,1,1,0,Medio
+INC-0350,La Victoria,Acoso en transporte,18,Viernes,-12.060841,-77.017228,Regular,4,0,1,1,1,Medio
+INC-0351,Cercado de Lima,Acoso en transporte,16,Domingo,-12.046265,-77.034148,Buena,0,0,1,0,1,Medio
+INC-0352,La Victoria,Robo al paso,17,Viernes,-12.056396,-77.021069,Buena,4,1,1,1,1,Medio
+INC-0353,Rímac,Hurto,15,Viernes,-12.029255,-77.041804,Regular,6,0,0,0,0,Bajo
+INC-0354,Cercado de Lima,Extorsión,13,Viernes,-12.05285,-77.042053,Regular,4,0,1,0,0,Medio
+INC-0355,Breña,Robo de celular,16,Jueves,-12.052855,-77.047418,Buena,5,0,0,0,0,Bajo
+INC-0356,La Victoria,Acoso en transporte,18,Martes,-12.071177,-77.0243,Regular,1,1,1,1,1,Medio
+INC-0357,Cercado de Lima,Robo al paso,20,Lunes,-12.044775,-77.039739,Buena,5,1,1,1,1,Alto
+INC-0358,La Victoria,Robo a vivienda,23,Lunes,-12.07005,-77.015045,Deficiente,3,0,1,0,0,Alto
+INC-0359,Breña,Robo al paso,21,Domingo,-12.060241,-77.044257,Buena,3,1,1,0,0,Medio
+INC-0360,La Victoria,Robo al paso,22,Martes,-12.064654,-77.012853,Buena,4,1,1,0,0,Medio
+INC-0361,La Victoria,Robo de celular,21,Jueves,-12.072917,-77.019591,Deficiente,2,0,1,0,1,Alto
+INC-0362,Breña,Robo al paso,19,Miércoles,-12.062593,-77.045969,Regular,4,1,0,1,1,Medio
+INC-0363,Cercado de Lima,Hurto,21,Sábado,-12.052249,-77.042663,Deficiente,6,1,1,0,1,Alto
+INC-0364,La Victoria,Robo de laptop,9,Viernes,-12.078942,-77.019622,Buena,3,0,0,1,1,Medio
+INC-0365,Cercado de Lima,Robo de laptop,17,Domingo,-12.058664,-77.051173,Buena,4,0,1,1,1,Medio
+INC-0366,La Victoria,Robo al paso,19,Lunes,-12.068531,-77.016111,Deficiente,4,0,1,1,1,Alto
+INC-0367,Cercado de Lima,Extorsión,22,Jueves,-12.047593,-77.037259,Regular,3,0,0,0,0,Medio
+INC-0368,Rímac,Acoso en transporte,16,Martes,-12.031711,-77.034253,Regular,3,0,1,0,0,Bajo
+INC-0369,Breña,Acoso en transporte,17,Sábado,-12.060322,-77.053671,Regular,5,0,0,1,1,Bajo
+INC-0370,Rímac,Hurto,8,Sábado,-12.031755,-77.034657,Buena,5,0,0,1,0,Bajo
+INC-0371,Cercado de Lima,Robo a vivienda,23,Martes,-12.039575,-77.046448,Regular,3,1,1,0,1,Medio
+INC-0372,Cercado de Lima,Robo al paso,18,Viernes,-12.051514,-77.039948,Buena,2,1,1,1,0,Medio
+INC-0373,Breña,Robo al paso,19,Miércoles,-12.065916,-77.050331,Buena,4,0,0,1,1,Bajo
+INC-0374,Rímac,Hurto,7,Miércoles,-12.027293,-77.034641,Buena,6,0,1,1,0,Bajo
+INC-0375,Breña,Robo a vivienda,23,Viernes,-12.056769,-77.057128,Deficiente,3,0,0,0,1,Medio
+INC-0376,La Victoria,Hurto,21,Sábado,-12.068604,-77.020252,Deficiente,5,0,1,0,1,Alto
+INC-0377,Lince,Robo al paso,21,Martes,-12.08266,-77.030257,Buena,7,1,1,0,1,Medio
+INC-0378,La Victoria,Extorsión,17,Sábado,-12.06836,-77.013613,Buena,6,0,0,1,1,Medio
+INC-0379,La Victoria,Acoso en transporte,22,Martes,-12.064659,-77.016879,Deficiente,2,1,1,0,1,Alto
+INC-0380,La Victoria,Robo al paso,7,Domingo,-12.071665,-77.033027,Buena,2,0,0,1,0,Bajo
+INC-0381,Cercado de Lima,Robo al paso,16,Viernes,-12.051382,-77.036509,Regular,3,1,0,0,1,Medio
+INC-0382,Cercado de Lima,Robo de laptop,21,Domingo,-12.059028,-77.030547,Deficiente,3,0,1,0,1,Alto
+INC-0383,La Victoria,Robo al paso,19,Miércoles,-12.060468,-77.014214,Deficiente,3,0,1,1,0,Alto
+INC-0384,La Victoria,Acoso en transporte,8,Jueves,-12.067422,-77.023477,Deficiente,5,1,1,1,1,Alto
+INC-0385,Cercado de Lima,Robo a vivienda,7,Miércoles,-12.041957,-77.038544,Buena,4,0,1,1,0,Bajo
+INC-0386,La Victoria,Amenazas,18,Lunes,-12.069023,-77.028355,Buena,9,1,0,1,1,Medio
+INC-0387,La Victoria,Robo al paso,9,Domingo,-12.052452,-77.023013,Regular,6,0,0,1,1,Medio
+INC-0388,Cercado de Lima,Hurto,20,Martes,-12.051001,-77.042392,Deficiente,8,0,0,1,0,Alto
+INC-0389,La Victoria,Hurto,7,Domingo,-12.074825,-77.026002,Deficiente,3,1,0,1,1,Medio
+INC-0390,Cercado de Lima,Robo al paso,17,Martes,-12.046703,-77.047777,Buena,6,1,1,1,1,Medio
+INC-0391,La Victoria,Robo al paso,20,Martes,-12.069749,-77.022045,Buena,3,1,1,1,0,Alto
+INC-0392,Lince,Robo al paso,8,Martes,-12.08442,-77.034447,Regular,5,0,1,1,1,Bajo
+INC-0393,Cercado de Lima,Robo de celular,23,Lunes,-12.042499,-77.038032,Regular,3,0,0,0,0,Medio
+INC-0394,Cercado de Lima,Robo de celular,22,Jueves,-12.05421,-77.053918,Regular,0,0,1,0,1,Medio
+INC-0395,Breña,Extorsión,9,Sábado,-12.07033,-77.048773,Regular,2,1,1,1,1,Medio
+INC-0396,La Victoria,Robo a vivienda,19,Martes,-12.068385,-77.021661,Deficiente,6,0,1,1,0,Alto
+INC-0397,Cercado de Lima,Robo a vivienda,21,Martes,-12.049442,-77.042616,Deficiente,3,1,0,0,0,Medio
+INC-0398,Breña,Robo de laptop,16,Miércoles,-12.056209,-77.055517,Regular,4,0,1,0,0,Bajo
+INC-0399,La Victoria,Robo a vivienda,9,Sábado,-12.067581,-77.013684,Buena,3,0,0,1,1,Bajo
+INC-0400,Cercado de Lima,Robo al paso,19,Miércoles,-12.038885,-77.047474,Deficiente,4,0,1,1,1,Alto
+INC-0401,Cercado de Lima,Robo al paso,18,Jueves,-12.042055,-77.030114,Buena,3,0,0,1,1,Bajo
+INC-0402,Cercado de Lima,Acoso en transporte,8,Viernes,-12.044738,-77.034656,Deficiente,6,0,1,1,0,Alto
+INC-0403,Lince,Robo de laptop,22,Sábado,-12.094783,-77.037944,Buena,4,1,1,0,1,Medio
+INC-0404,Cercado de Lima,Robo de celular,9,Domingo,-12.047481,-77.034571,Buena,5,0,1,1,1,Bajo
+INC-0405,Cercado de Lima,Robo de laptop,21,Viernes,-12.046455,-77.052457,Regular,2,0,1,0,1,Alto
+INC-0406,Jesús María,Robo al paso,6,Lunes,-12.076975,-77.054209,Deficiente,5,1,1,0,1,Medio
+INC-0407,La Victoria,Robo al paso,21,Lunes,-12.066549,-77.020249,Regular,8,0,0,0,0,Alto
+INC-0408,Cercado de Lima,Amenazas,14,Lunes,-12.050539,-77.042549,Buena,5,0,0,0,0,Bajo
+INC-0409,Cercado de Lima,Robo al paso,18,Martes,-12.046807,-77.043742,Regular,5,1,1,1,0,Medio
+INC-0410,Cercado de Lima,Robo de laptop,23,Sábado,-12.0488,-77.048981,Regular,4,0,1,0,1,Alto
+INC-0411,La Victoria,Robo de celular,20,Martes,-12.075259,-77.017162,Buena,4,0,0,1,0,Medio
+INC-0412,Jesús María,Robo de laptop,9,Viernes,-12.068447,-77.051848,Regular,3,1,0,1,1,Medio
+INC-0413,La Victoria,Extorsión,19,Lunes,-12.073475,-77.037027,Deficiente,5,0,1,1,1,Alto
+INC-0414,Cercado de Lima,Robo al paso,22,Martes,-12.043889,-77.040643,Regular,3,0,0,0,1,Medio
+INC-0415,Lince,Hurto,19,Jueves,-12.097342,-77.037009,Regular,3,0,0,1,0,Bajo
+INC-0416,La Victoria,Robo de celular,20,Jueves,-12.060657,-77.022097,Deficiente,2,1,0,1,1,Alto
+INC-0417,Lince,Robo al paso,15,Lunes,-12.096643,-77.039294,Regular,7,0,1,0,1,Medio
+INC-0418,Breña,Robo de celular,9,Jueves,-12.059371,-77.05421,Regular,4,0,1,1,0,Bajo
+INC-0419,Rímac,Robo a vivienda,16,Lunes,-12.044091,-77.034421,Buena,6,0,1,0,0,Bajo
+INC-0420,La Victoria,Robo de celular,17,Lunes,-12.070876,-77.022569,Buena,5,0,0,1,0,Bajo
+INC-0421,La Victoria,Acoso en transporte,21,Jueves,-12.058594,-77.024934,Regular,5,0,1,0,0,Alto
+INC-0422,Rímac,Robo de celular,20,Lunes,-12.029936,-77.025868,Deficiente,1,0,1,1,1,Medio
+INC-0423,Lince,Robo de celular,18,Martes,-12.090482,-77.036211,Regular,3,0,0,1,1,Bajo
+INC-0424,La Victoria,Robo de celular,22,Lunes,-12.074489,-77.018506,Regular,6,1,0,0,1,Medio
+INC-0425,Breña,Robo al paso,6,Miércoles,-12.056304,-77.043338,Buena,2,0,1,0,0,Bajo
+INC-0426,Cercado de Lima,Robo al paso,8,Martes,-12.047683,-77.036978,Deficiente,6,1,1,1,0,Alto
+INC-0427,Cercado de Lima,Robo de laptop,19,Lunes,-12.061721,-77.048419,Deficiente,3,0,1,1,0,Alto
+INC-0428,Breña,Hurto,6,Domingo,-12.056492,-77.05312,Buena,7,1,1,0,1,Bajo
+INC-0429,Rímac,Robo de laptop,19,Viernes,-12.039358,-77.019064,Regular,3,0,0,1,1,Medio
+INC-0430,Lince,Robo de celular,18,Lunes,-12.087404,-77.036473,Deficiente,3,1,1,1,1,Medio
+INC-0431,Lince,Hurto,22,Jueves,-12.088624,-77.028696,Buena,6,0,1,0,1,Medio
+INC-0432,Lince,Robo al paso,2,Miércoles,-12.081369,-77.039386,Regular,3,1,1,0,0,Medio
+INC-0433,Lince,Extorsión,19,Martes,-12.091159,-77.03703,Buena,2,0,1,1,0,Bajo
+INC-0434,Rímac,Hurto,19,Sábado,-12.03972,-77.028097,Buena,6,1,0,1,1,Medio
+INC-0435,Cercado de Lima,Robo al paso,17,Martes,-12.048619,-77.045488,Regular,4,0,1,1,1,Medio
+INC-0436,Cercado de Lima,Acoso en transporte,18,Jueves,-12.053874,-77.039665,Regular,5,0,1,1,1,Medio
+INC-0437,Jesús María,Robo al paso,21,Lunes,-12.082036,-77.059338,Deficiente,3,1,0,0,0,Medio
+INC-0438,La Victoria,Robo al paso,17,Lunes,-12.070779,-77.006754,Deficiente,4,0,0,1,0,Medio
+INC-0439,Cercado de Lima,Robo de laptop,4,Martes,-12.044759,-77.040056,Deficiente,5,0,1,0,0,Alto
+INC-0440,Cercado de Lima,Robo al paso,22,Jueves,-12.043339,-77.046696,Deficiente,7,0,1,0,0,Alto
+INC-0441,Cercado de Lima,Robo a vivienda,19,Jueves,-12.044841,-77.057412,Regular,2,1,1,1,1,Alto
+INC-0442,Cercado de Lima,Robo al paso,22,Martes,-12.035232,-77.048478,Buena,3,0,1,0,0,Medio
+INC-0443,Cercado de Lima,Robo al paso,17,Miércoles,-12.037734,-77.038827,Deficiente,4,1,1,1,1,Alto
+INC-0444,Cercado de Lima,Robo al paso,6,Viernes,-12.042726,-77.048672,Regular,3,0,1,0,0,Medio
+INC-0445,Cercado de Lima,Robo de celular,7,Martes,-12.045095,-77.046721,Regular,1,1,0,1,1,Medio
+INC-0446,La Victoria,Robo al paso,20,Lunes,-12.080822,-77.010245,Buena,6,0,0,1,0,Medio
+INC-0447,La Victoria,Robo de celular,19,Jueves,-12.06036,-77.012465,Buena,5,1,1,1,1,Medio
+INC-0448,Cercado de Lima,Robo de celular,17,Miércoles,-12.051109,-77.032164,Deficiente,4,1,1,1,1,Medio
+INC-0449,Cercado de Lima,Robo a vivienda,8,Sábado,-12.034455,-77.038935,Regular,5,0,1,1,0,Medio
+INC-0450,Cercado de Lima,Robo al paso,21,Lunes,-12.045782,-77.056684,Regular,6,0,0,0,1,Alto
+INC-0451,La Victoria,Robo a vivienda,19,Miércoles,-12.059405,-77.02602,Buena,3,1,0,1,0,Medio
+INC-0452,Breña,Extorsión,17,Viernes,-12.045349,-77.053866,Regular,6,1,1,1,0,Medio
+INC-0453,Lince,Robo al paso,20,Jueves,-12.09117,-77.033718,Buena,6,0,0,1,1,Medio
+INC-0454,Breña,Robo de celular,19,Jueves,-12.055608,-77.045778,Deficiente,3,1,0,1,1,Medio
+INC-0455,Cercado de Lima,Robo de laptop,23,Martes,-12.053704,-77.05179,Buena,4,0,0,0,0,Medio
+INC-0456,Jesús María,Robo de celular,23,Jueves,-12.071026,-77.054568,Regular,7,1,1,0,1,Medio
+INC-0457,Cercado de Lima,Hurto,7,Miércoles,-12.048888,-77.052604,Buena,4,0,0,1,1,Bajo
+INC-0458,Rímac,Acoso en transporte,20,Viernes,-12.030573,-77.017381,Regular,3,0,0,1,1,Medio
+INC-0459,Breña,Robo a vivienda,19,Sábado,-12.049598,-77.039704,Regular,3,1,1,1,1,Medio
+INC-0460,La Victoria,Robo al paso,23,Viernes,-12.073152,-77.025161,Deficiente,2,1,1,0,1,Alto
+INC-0461,La Victoria,Hurto,19,Miércoles,-12.058718,-77.009308,Regular,2,0,1,1,1,Medio
+INC-0462,Jesús María,Robo al paso,21,Miércoles,-12.073698,-77.047583,Deficiente,0,1,1,0,1,Medio
+INC-0463,Cercado de Lima,Robo de celular,23,Lunes,-12.03115,-77.041402,Deficiente,2,1,0,0,0,Medio
+INC-0464,Cercado de Lima,Robo de celular,17,Martes,-12.051613,-77.036417,Regular,2,0,0,1,0,Bajo
+INC-0465,Cercado de Lima,Robo a vivienda,21,Lunes,-12.053795,-77.033618,Regular,3,1,1,0,0,Medio
+INC-0466,Cercado de Lima,Robo de celular,17,Lunes,-12.039861,-77.046227,Deficiente,2,1,0,1,0,Medio
+INC-0467,La Victoria,Robo de celular,21,Jueves,-12.068631,-77.020778,Regular,1,1,0,0,1,Medio
+INC-0468,Cercado de Lima,Robo al paso,5,Domingo,-12.050704,-77.044868,Buena,3,0,0,0,1,Medio
+INC-0469,La Victoria,Robo al paso,18,Miércoles,-12.061171,-77.026488,Deficiente,5,0,1,1,1,Medio
+INC-0470,Lince,Robo al paso,15,Jueves,-12.094485,-77.027235,Deficiente,2,0,1,0,0,Medio
+INC-0471,Rímac,Robo de laptop,9,Martes,-12.024884,-77.045976,Regular,2,0,0,1,1,Bajo
+INC-0472,Breña,Robo de celular,20,Martes,-12.066183,-77.058523,Buena,4,0,1,1,1,Bajo
+INC-0473,Breña,Robo al paso,11,Sábado,-12.069769,-77.053159,Regular,4,0,1,0,0,Medio
+INC-0474,La Victoria,Robo al paso,18,Jueves,-12.070749,-77.023852,Deficiente,2,1,0,1,1,Medio
+INC-0475,Lince,Robo de celular,19,Lunes,-12.095613,-77.037699,Regular,2,1,0,1,0,Medio
+INC-0476,Rímac,Acoso en transporte,6,Sábado,-12.025869,-77.021262,Regular,2,1,0,0,1,Bajo
+INC-0477,La Victoria,Hurto,20,Lunes,-12.072985,-77.010102,Deficiente,2,1,0,1,0,Alto
+INC-0478,La Victoria,Hurto,22,Lunes,-12.071047,-77.020918,Regular,2,0,1,0,0,Medio
+INC-0479,Jesús María,Hurto,8,Lunes,-12.068434,-77.048719,Deficiente,4,0,1,1,0,Bajo
+INC-0480,La Victoria,Acoso en transporte,21,Viernes,-12.070923,-77.024036,Regular,2,0,1,0,1,Alto
+INC-0481,Rímac,Hurto,8,Miércoles,-12.024232,-77.034563,Regular,2,1,0,1,1,Bajo
+INC-0482,Rímac,Robo de celular,22,Miércoles,-12.028932,-77.023846,Deficiente,5,0,1,0,1,Medio
+INC-0483,Breña,Robo al paso,7,Martes,-12.058095,-77.052712,Deficiente,2,1,1,1,1,Medio
+INC-0484,Breña,Robo al paso,22,Lunes,-12.059462,-77.05129,Deficiente,4,0,1,0,0,Medio
+INC-0485,Cercado de Lima,Extorsión,4,Miércoles,-12.047812,-77.053197,Regular,6,0,0,0,1,Medio
+INC-0486,Cercado de Lima,Robo al paso,23,Viernes,-12.04743,-77.036209,Regular,4,0,1,0,0,Alto
+INC-0487,Jesús María,Robo de celular,8,Martes,-12.066292,-77.039191,Deficiente,5,1,0,1,1,Bajo
+INC-0488,La Victoria,Robo al paso,20,Lunes,-12.074146,-77.013062,Buena,5,1,0,1,1,Medio
+INC-0489,Cercado de Lima,Robo de celular,17,Lunes,-12.044411,-77.037004,Regular,2,1,0,1,1,Medio
+INC-0490,La Victoria,Acoso en transporte,10,Domingo,-12.069704,-77.015542,Deficiente,4,0,1,0,1,Medio
+INC-0491,La Victoria,Robo al paso,18,Sábado,-12.068087,-77.018982,Buena,4,0,0,1,1,Medio
+INC-0492,Cercado de Lima,Amenazas,10,Lunes,-12.059917,-77.040784,Deficiente,3,0,1,0,1,Medio
+INC-0493,La Victoria,Robo al paso,8,Miércoles,-12.067236,-77.025847,Buena,1,0,0,1,0,Bajo
+INC-0494,Cercado de Lima,Robo de laptop,19,Jueves,-12.057378,-77.039104,Buena,3,1,0,1,1,Medio
+INC-0495,La Victoria,Robo al paso,15,Miércoles,-12.065672,-77.016186,Buena,6,0,1,0,1,Medio
+INC-0496,Breña,Robo al paso,20,Sábado,-12.066212,-77.03958,Deficiente,4,0,1,1,1,Alto
+INC-0497,Rímac,Robo al paso,23,Viernes,-12.038377,-77.03427,Buena,6,0,1,0,0,Medio
+INC-0498,Cercado de Lima,Robo de laptop,20,Miércoles,-12.043393,-77.042733,Regular,1,1,1,1,1,Alto
+INC-0499,Breña,Robo al paso,19,Viernes,-12.053678,-77.053474,Regular,4,1,0,1,1,Medio
+INC-0500,Rímac,Acoso en transporte,20,Jueves,-12.026516,-77.034185,Buena,3,1,1,1,1,Medio
+INC-0501,Rímac,Hurto,23,Jueves,-12.030931,-77.029831,Regular,7,0,1,0,0,Medio
+INC-0502,Rímac,Robo al paso,22,Jueves,-12.032551,-77.035747,Buena,2,1,0,0,1,Bajo
+INC-0503,La Victoria,Robo de laptop,23,Jueves,-12.06796,-77.030805,Deficiente,3,1,1,0,1,Alto
+INC-0504,Cercado de Lima,Hurto,18,Martes,-12.043716,-77.042848,Regular,3,1,1,1,1,Medio
+INC-0505,Breña,Robo de laptop,19,Jueves,-12.05861,-77.063682,Buena,0,0,1,1,1,Medio
+INC-0506,La Victoria,Amenazas,21,Miércoles,-12.064159,-77.009867,Deficiente,3,0,0,0,1,Medio
+INC-0507,Cercado de Lima,Amenazas,18,Jueves,-12.048434,-77.045183,Regular,3,0,0,1,0,Bajo
+INC-0508,La Victoria,Robo a vivienda,7,Viernes,-12.070896,-77.016573,Regular,4,1,0,1,0,Medio
+INC-0509,Lince,Robo al paso,22,Martes,-12.105145,-77.039083,Buena,6,0,1,0,0,Medio
+INC-0510,Rímac,Acoso en transporte,5,Jueves,-12.032818,-77.032999,Deficiente,3,1,1,0,1,Medio
+INC-0511,Cercado de Lima,Robo de celular,16,Domingo,-12.052198,-77.039961,Buena,5,1,0,0,1,Bajo
+INC-0512,Jesús María,Extorsión,17,Sábado,-12.087219,-77.057798,Buena,2,0,1,1,0,Bajo
+INC-0513,Breña,Robo a vivienda,10,Jueves,-12.056891,-77.055283,Deficiente,7,1,0,0,1,Bajo
+INC-0514,Cercado de Lima,Extorsión,7,Viernes,-12.056703,-77.052276,Regular,4,1,1,1,0,Medio
+INC-0515,La Victoria,Robo de laptop,20,Martes,-12.060882,-77.028008,Buena,2,1,0,1,1,Medio
+INC-0516,Cercado de Lima,Robo al paso,18,Sábado,-12.047583,-77.051837,Regular,5,0,1,1,0,Medio
+INC-0517,La Victoria,Robo de laptop,22,Miércoles,-12.064708,-77.014288,Buena,5,0,1,0,0,Medio
+INC-0518,Cercado de Lima,Robo al paso,21,Domingo,-12.046336,-77.050816,Deficiente,1,0,1,0,1,Alto
+INC-0519,Breña,Hurto,7,Martes,-12.061323,-77.047074,Regular,5,0,1,1,1,Bajo
+INC-0520,Cercado de Lima,Hurto,8,Martes,-12.054945,-77.045538,Regular,3,0,1,1,1,Medio
+INC-0521,La Victoria,Robo al paso,22,Viernes,-12.055397,-77.021922,Deficiente,3,0,0,0,1,Alto
+INC-0522,Breña,Robo de laptop,6,Lunes,-12.06151,-77.047531,Regular,3,0,0,0,1,Bajo
+INC-0523,Breña,Robo al paso,11,Domingo,-12.055977,-77.055058,Regular,4,0,1,0,0,Bajo
+INC-0524,Cercado de Lima,Hurto,23,Martes,-12.051355,-77.031722,Deficiente,7,0,1,0,0,Alto
+INC-0525,La Victoria,Robo al paso,17,Viernes,-12.06973,-77.020405,Regular,3,1,1,1,1,Alto
+INC-0526,La Victoria,Robo al paso,15,Jueves,-12.073867,-77.015901,Buena,4,0,1,0,1,Medio
+INC-0527,Breña,Robo de laptop,21,Viernes,-12.061397,-77.0519,Buena,3,1,0,0,0,Medio
+INC-0528,Cercado de Lima,Acoso en transporte,16,Lunes,-12.048984,-77.037962,Regular,4,1,1,0,1,Medio
+INC-0529,Cercado de Lima,Hurto,16,Jueves,-12.048048,-77.043204,Deficiente,7,0,0,0,1,Medio
+INC-0530,Rímac,Robo de celular,18,Viernes,-12.039665,-77.023201,Regular,3,0,1,1,1,Bajo
+INC-0531,Breña,Robo de celular,17,Miércoles,-12.06611,-77.049733,Deficiente,2,1,0,1,1,Bajo
+INC-0532,Rímac,Robo al paso,23,Lunes,-12.02752,-77.028959,Regular,2,0,0,0,0,Medio
+INC-0533,La Victoria,Robo al paso,8,Viernes,-12.070561,-77.010505,Deficiente,1,1,1,1,1,Alto
+INC-0534,Breña,Robo de celular,21,Lunes,-12.060261,-77.05433,Regular,3,0,1,0,0,Medio
+INC-0535,Rímac,Hurto,17,Sábado,-12.031894,-77.029731,Buena,3,1,0,1,0,Bajo
+INC-0536,Rímac,Acoso en transporte,21,Viernes,-12.020821,-77.021038,Regular,5,0,1,0,0,Medio
+INC-0537,La Victoria,Robo de laptop,18,Sábado,-12.068985,-77.016737,Regular,3,0,0,1,1,Medio
+INC-0538,Breña,Hurto,6,Sábado,-12.068029,-77.055894,Regular,7,1,0,0,0,Bajo
+INC-0539,Cercado de Lima,Robo de laptop,20,Sábado,-12.054611,-77.0365,Buena,2,1,1,1,1,Alto
+INC-0540,Rímac,Robo de laptop,8,Lunes,-12.03822,-77.025704,Buena,5,1,1,1,1,Bajo
+INC-0541,La Victoria,Robo al paso,22,Sábado,-12.067339,-77.027671,Buena,4,1,0,0,0,Medio
+INC-0542,Lince,Robo de laptop,22,Miércoles,-12.097663,-77.029252,Regular,4,0,0,0,1,Medio
+INC-0543,Cercado de Lima,Robo al paso,21,Martes,-12.048187,-77.043064,Regular,3,1,1,0,1,Alto
+INC-0544,Breña,Robo de celular,23,Miércoles,-12.062008,-77.048394,Deficiente,3,1,0,0,1,Medio
+INC-0545,Cercado de Lima,Robo de celular,18,Sábado,-12.042651,-77.046173,Regular,5,1,1,1,1,Medio
+INC-0546,La Victoria,Robo de laptop,18,Martes,-12.069409,-77.018568,Buena,8,0,0,1,1,Medio
+INC-0547,Cercado de Lima,Acoso en transporte,17,Domingo,-12.052582,-77.039512,Regular,3,1,0,1,1,Medio
+INC-0548,Lince,Robo de celular,16,Viernes,-12.081778,-77.042189,Buena,3,1,1,0,1,Bajo
+INC-0549,La Victoria,Robo de celular,22,Domingo,-12.069848,-77.019091,Regular,7,1,1,0,1,Alto
+INC-0550,Rímac,Robo de laptop,22,Miércoles,-12.014696,-77.031967,Regular,5,0,1,0,1,Medio
+INC-0551,La Victoria,Robo de laptop,6,Lunes,-12.066491,-77.017636,Regular,8,0,0,0,1,Medio
+INC-0552,Rímac,Robo al paso,8,Martes,-12.032624,-77.033869,Deficiente,1,0,1,1,1,Medio
+INC-0553,Breña,Hurto,22,Domingo,-12.047681,-77.037669,Regular,5,1,1,0,1,Medio
+INC-0554,La Victoria,Robo al paso,16,Jueves,-12.061162,-77.004043,Buena,7,1,1,0,0,Medio
+INC-0555,La Victoria,Robo al paso,10,Miércoles,-12.066635,-77.012061,Deficiente,5,0,1,0,1,Medio
+INC-0556,Cercado de Lima,Acoso en transporte,20,Martes,-12.043427,-77.04638,Buena,5,0,0,1,1,Medio
+INC-0557,Cercado de Lima,Robo al paso,16,Viernes,-12.037165,-77.05031,Regular,1,0,1,0,0,Medio
+INC-0558,Cercado de Lima,Robo a vivienda,19,Jueves,-12.048583,-77.035507,Buena,9,0,1,1,0,Medio
+INC-0559,La Victoria,Acoso en transporte,9,Martes,-12.071858,-77.026367,Regular,3,1,0,1,1,Medio
+INC-0560,Rímac,Robo al paso,19,Jueves,-12.03657,-77.031421,Deficiente,6,1,0,1,1,Alto
+INC-0561,Breña,Amenazas,22,Jueves,-12.061267,-77.047514,Buena,6,1,0,0,1,Bajo
+INC-0562,Rímac,Robo a vivienda,8,Sábado,-12.027631,-77.017895,Deficiente,3,0,1,1,0,Medio
+INC-0563,Breña,Acoso en transporte,7,Viernes,-12.059705,-77.044396,Buena,0,0,1,1,1,Bajo
+INC-0564,La Victoria,Robo a vivienda,20,Martes,-12.052667,-77.029179,Deficiente,4,0,1,1,1,Alto
+INC-0565,Cercado de Lima,Hurto,5,Martes,-12.043161,-77.051344,Regular,2,1,1,0,1,Medio
+INC-0566,La Victoria,Robo al paso,17,Martes,-12.055811,-77.001847,Deficiente,7,1,1,1,1,Alto
+INC-0567,Breña,Robo al paso,9,Martes,-12.064274,-77.054001,Regular,3,0,1,1,0,Bajo
+INC-0568,Cercado de Lima,Robo al paso,18,Martes,-12.040711,-77.044636,Regular,2,1,1,1,0,Medio
+INC-0569,Jesús María,Extorsión,16,Jueves,-12.072728,-77.045171,Buena,6,0,1,0,0,Bajo
+INC-0570,Lince,Hurto,8,Martes,-12.090486,-77.041045,Regular,1,0,1,1,1,Bajo
+INC-0571,La Victoria,Robo de celular,21,Viernes,-12.075361,-77.014079,Regular,3,0,1,0,0,Alto
+INC-0572,Cercado de Lima,Hurto,21,Martes,-12.035703,-77.044284,Regular,5,0,1,0,1,Medio
+INC-0573,Jesús María,Extorsión,7,Sábado,-12.070366,-77.058311,Regular,2,0,0,1,1,Bajo
+INC-0574,La Victoria,Robo de celular,4,Lunes,-12.066598,-77.021704,Deficiente,6,0,1,0,0,Alto
+INC-0575,Rímac,Robo al paso,16,Miércoles,-12.025076,-77.024569,Regular,3,0,0,0,1,Bajo
+INC-0576,Breña,Acoso en transporte,8,Martes,-12.056422,-77.060626,Buena,4,0,1,1,1,Bajo
+INC-0577,Cercado de Lima,Acoso en transporte,17,Jueves,-12.054795,-77.05008,Regular,1,0,0,1,0,Medio
+INC-0578,Rímac,Acoso en transporte,17,Martes,-12.023558,-77.023355,Buena,7,0,0,1,1,Bajo
+INC-0579,Rímac,Robo de celular,20,Lunes,-12.027372,-77.036209,Regular,3,1,0,1,1,Medio
+INC-0580,Cercado de Lima,Robo de celular,17,Miércoles,-12.048324,-77.048527,Regular,4,0,0,1,1,Bajo
+INC-0581,La Victoria,Robo de laptop,22,Sábado,-12.073265,-77.028238,Buena,1,1,0,0,1,Medio
+INC-0582,Breña,Acoso en transporte,19,Viernes,-12.065186,-77.05247,Regular,4,0,0,1,1,Medio
+INC-0583,Rímac,Robo de laptop,16,Miércoles,-12.035254,-77.042017,Deficiente,5,1,0,0,1,Bajo
+INC-0584,Rímac,Robo de celular,6,Lunes,-12.041205,-77.033794,Regular,3,0,1,0,1,Bajo
+INC-0585,Cercado de Lima,Robo al paso,20,Viernes,-12.037146,-77.046647,Deficiente,3,0,1,1,1,Alto
+INC-0586,Rímac,Acoso en transporte,21,Viernes,-12.035688,-77.024376,Regular,2,1,0,0,1,Medio
+INC-0587,La Victoria,Acoso en transporte,6,Domingo,-12.071269,-77.016604,Deficiente,5,1,1,0,1,Medio
+INC-0588,Rímac,Robo de celular,6,Miércoles,-12.029932,-77.021071,Regular,7,1,0,0,1,Bajo
+INC-0589,La Victoria,Robo al paso,7,Martes,-12.066326,-77.002338,Deficiente,5,1,1,1,1,Alto
+INC-0590,Rímac,Hurto,22,Jueves,-12.02404,-77.034049,Deficiente,5,1,1,0,1,Medio
+INC-0591,La Victoria,Acoso en transporte,21,Viernes,-12.065153,-77.013252,Buena,2,1,0,0,1,Medio
+INC-0592,Rímac,Robo a vivienda,20,Martes,-12.032721,-77.027611,Regular,6,1,1,1,1,Medio
+INC-0593,Cercado de Lima,Robo de laptop,18,Jueves,-12.047549,-77.050843,Deficiente,3,0,1,1,1,Medio
+INC-0594,Cercado de Lima,Robo de celular,20,Jueves,-12.036564,-77.054337,Regular,5,0,1,1,1,Medio
+INC-0595,Rímac,Hurto,21,Viernes,-12.032128,-77.030053,Buena,4,0,0,0,1,Bajo
+INC-0596,Lince,Robo al paso,20,Miércoles,-12.098985,-77.039399,Deficiente,3,0,1,1,0,Medio
+INC-0597,Lince,Acoso en transporte,7,Jueves,-12.09086,-77.031696,Deficiente,2,1,0,1,1,Medio
+INC-0598,Cercado de Lima,Robo al paso,19,Miércoles,-12.034075,-77.041913,Regular,2,1,1,1,1,Alto
+INC-0599,Cercado de Lima,Robo de laptop,23,Jueves,-12.051812,-77.032546,Buena,2,1,1,0,1,Medio
+INC-0600,La Victoria,Robo al paso,19,Sábado,-12.06555,-77.015748,Regular,6,0,1,1,1,Alto
+INC-0601,Cercado de Lima,Robo de celular,18,Miércoles,-12.049314,-77.048798,Regular,2,1,1,1,1,Medio
+INC-0602,Lince,Hurto,19,Miércoles,-12.090927,-77.036387,Buena,2,0,0,1,0,Bajo
+INC-0603,Cercado de Lima,Acoso en transporte,9,Lunes,-12.039373,-77.041005,Regular,3,1,0,1,1,Medio
+INC-0604,La Victoria,Acoso en transporte,22,Martes,-12.060941,-77.019138,Regular,5,0,0,0,0,Medio
+INC-0605,Cercado de Lima,Robo al paso,23,Jueves,-12.041567,-77.039746,Regular,4,1,1,0,1,Alto
+INC-0606,Breña,Robo de laptop,9,Jueves,-12.062383,-77.040478,Deficiente,2,0,1,1,0,Medio
+INC-0607,La Victoria,Robo de laptop,19,Domingo,-12.069464,-77.017499,Regular,4,0,0,1,1,Medio
+INC-0608,Breña,Robo de laptop,8,Martes,-12.057171,-77.055345,Buena,1,0,1,1,0,Bajo
+INC-0609,Cercado de Lima,Acoso en transporte,19,Viernes,-12.039826,-77.047045,Buena,0,0,1,1,1,Alto
+INC-0610,La Victoria,Robo al paso,22,Domingo,-12.056535,-77.026687,Deficiente,6,0,1,0,1,Alto
+INC-0611,Cercado de Lima,Robo al paso,21,Jueves,-12.038991,-77.057111,Deficiente,2,0,1,0,0,Alto
+INC-0612,Cercado de Lima,Robo de laptop,7,Martes,-12.034846,-77.04942,Deficiente,5,1,1,1,1,Alto
+INC-0613,Cercado de Lima,Hurto,20,Martes,-12.041666,-77.042041,Buena,2,0,1,1,1,Medio
+INC-0614,Cercado de Lima,Hurto,17,Miércoles,-12.045302,-77.048749,Deficiente,4,1,1,1,0,Medio
+INC-0615,Cercado de Lima,Robo al paso,20,Martes,-12.042352,-77.042255,Regular,7,0,0,1,1,Alto
+INC-0616,Cercado de Lima,Robo al paso,17,Martes,-12.042437,-77.043684,Buena,4,1,1,1,0,Medio
+INC-0617,Rímac,Robo al paso,15,Miércoles,-12.034112,-77.036644,Deficiente,5,0,1,0,1,Medio
+INC-0618,Lince,Acoso en transporte,5,Lunes,-12.094233,-77.037358,Regular,2,0,1,0,1,Medio
+INC-0619,Jesús María,Robo a vivienda,20,Sábado,-12.079579,-77.047724,Regular,3,1,1,1,1,Medio
+INC-0620,Cercado de Lima,Hurto,7,Jueves,-12.049365,-77.051692,Buena,4,1,0,1,1,Bajo
+INC-0621,Cercado de Lima,Robo de celular,16,Viernes,-12.04518,-77.04365,Regular,5,1,1,0,1,Medio
+INC-0622,Rímac,Robo de celular,9,Viernes,-12.031725,-77.022973,Regular,7,0,1,1,0,Medio
+INC-0623,Rímac,Hurto,7,Domingo,-12.030458,-77.029054,Regular,3,1,1,1,1,Bajo
+INC-0624,Cercado de Lima,Robo al paso,9,Martes,-12.042726,-77.052157,Regular,4,1,1,1,1,Medio
+INC-0625,Cercado de Lima,Robo de celular,18,Jueves,-12.054396,-77.036203,Deficiente,4,0,1,1,1,Medio
+INC-0626,Lince,Robo de celular,6,Jueves,-12.101168,-77.039874,Regular,7,1,1,0,0,Bajo
+INC-0627,Rímac,Robo a vivienda,17,Miércoles,-12.030515,-77.02958,Regular,5,0,1,1,1,Bajo
+INC-0628,La Victoria,Robo a vivienda,20,Lunes,-12.069512,-77.00829,Buena,2,0,1,1,0,Medio
+INC-0629,Cercado de Lima,Robo al paso,18,Martes,-12.040053,-77.040934,Buena,3,0,0,1,0,Bajo
+INC-0630,Cercado de Lima,Acoso en transporte,16,Miércoles,-12.035348,-77.042132,Buena,3,1,1,0,1,Medio
+INC-0631,La Victoria,Acoso en transporte,23,Sábado,-12.064136,-77.030248,Deficiente,3,1,1,0,0,Alto
+INC-0632,Cercado de Lima,Hurto,15,Miércoles,-12.045614,-77.047939,Regular,5,1,1,0,1,Medio
+INC-0633,Cercado de Lima,Robo de celular,21,Viernes,-12.036551,-77.048615,Deficiente,4,0,0,0,0,Alto
+INC-0634,Rímac,Robo de celular,21,Jueves,-12.022712,-77.027371,Buena,7,1,1,0,1,Medio
+INC-0635,La Victoria,Robo de celular,8,Lunes,-12.06582,-77.015097,Regular,5,0,0,1,1,Bajo
+INC-0636,Breña,Extorsión,20,Martes,-12.053335,-77.04819,Deficiente,4,0,1,1,0,Medio
+INC-0637,Lince,Robo al paso,5,Jueves,-12.09447,-77.030443,Regular,4,0,0,0,0,Medio
+INC-0638,La Victoria,Acoso en transporte,21,Martes,-12.060848,-77.017588,Regular,2,1,1,0,0,Alto
+INC-0639,Breña,Extorsión,21,Miércoles,-12.05161,-77.050963,Regular,3,1,1,0,1,Medio
+INC-0640,Cercado de Lima,Robo al paso,9,Viernes,-12.050236,-77.046501,Buena,0,1,1,1,1,Medio
+INC-0641,Cercado de Lima,Robo al paso,17,Martes,-12.036437,-77.047398,Deficiente,2,1,0,1,0,Medio
+INC-0642,Rímac,Amenazas,18,Viernes,-12.035768,-77.032513,Regular,2,1,1,1,1,Medio
+INC-0643,Breña,Robo al paso,18,Viernes,-12.059382,-77.055614,Buena,4,1,0,1,1,Bajo
+INC-0644,La Victoria,Robo al paso,19,Miércoles,-12.063783,-77.015006,Regular,4,0,0,1,0,Medio
+INC-0645,Cercado de Lima,Robo de laptop,20,Sábado,-12.045136,-77.044731,Regular,5,1,0,1,1,Alto
+INC-0646,Cercado de Lima,Robo de celular,20,Martes,-12.043187,-77.035546,Regular,5,0,0,1,1,Medio
+INC-0647,Cercado de Lima,Acoso en transporte,22,Viernes,-12.046371,-77.045394,Buena,0,1,0,0,1,Medio
+INC-0648,Cercado de Lima,Acoso en transporte,8,Martes,-12.052389,-77.053213,Regular,4,1,1,1,1,Medio
+INC-0649,Cercado de Lima,Robo de celular,23,Viernes,-12.039564,-77.038969,Deficiente,4,1,0,0,1,Alto
+INC-0650,La Victoria,Robo al paso,23,Sábado,-12.075722,-77.017766,Buena,6,0,1,0,0,Alto
+INC-0651,Rímac,Robo al paso,8,Sábado,-12.022389,-77.043827,Regular,4,1,1,1,0,Medio
+INC-0652,Cercado de Lima,Robo al paso,18,Lunes,-12.045429,-77.032994,Regular,3,1,0,1,1,Medio
+INC-0653,La Victoria,Robo al paso,19,Miércoles,-12.067656,-77.016552,Regular,1,1,0,1,0,Alto
+INC-0654,Cercado de Lima,Robo a vivienda,23,Jueves,-12.048846,-77.044667,Regular,7,1,0,0,1,Medio
+INC-0655,Breña,Robo al paso,20,Jueves,-12.064468,-77.044593,Regular,1,1,0,1,0,Medio
+INC-0656,La Victoria,Robo de laptop,19,Sábado,-12.07378,-77.021857,Deficiente,3,0,0,1,1,Alto
+INC-0657,Breña,Robo de celular,20,Lunes,-12.065414,-77.054621,Buena,7,0,0,1,0,Bajo
+INC-0658,Cercado de Lima,Robo al paso,19,Viernes,-12.04906,-77.050233,Deficiente,6,1,1,1,1,Alto
+INC-0659,Lince,Robo de celular,9,Jueves,-12.081258,-77.036805,Deficiente,5,0,1,1,1,Bajo
+INC-0660,Cercado de Lima,Extorsión,23,Sábado,-12.053127,-77.034519,Regular,10,1,1,0,1,Alto
+INC-0661,La Victoria,Robo al paso,21,Viernes,-12.069926,-77.017761,Buena,8,0,1,0,1,Alto
+INC-0662,Cercado de Lima,Robo al paso,22,Sábado,-12.042534,-77.041921,Buena,5,0,0,0,1,Medio
+INC-0663,La Victoria,Robo de laptop,7,Lunes,-12.062036,-77.016843,Regular,4,0,1,1,0,Medio
+INC-0664,La Victoria,Robo a vivienda,15,Miércoles,-12.063866,-77.017779,Deficiente,1,0,0,0,0,Medio
+INC-0665,Rímac,Acoso en transporte,22,Viernes,-12.031153,-77.021623,Buena,5,0,1,0,0,Medio
+INC-0666,Lince,Extorsión,17,Viernes,-12.079297,-77.038769,Buena,2,1,1,1,1,Bajo
+INC-0667,La Victoria,Robo a vivienda,19,Viernes,-12.073527,-77.025823,Regular,7,1,1,1,1,Alto
+INC-0668,Rímac,Robo a vivienda,8,Jueves,-12.035852,-77.040594,Deficiente,5,0,1,1,0,Bajo
+INC-0669,Cercado de Lima,Robo de laptop,7,Lunes,-12.055201,-77.039877,Deficiente,6,1,1,1,1,Alto
+INC-0670,Breña,Hurto,22,Lunes,-12.065974,-77.044606,Regular,3,0,0,0,0,Bajo
+INC-0671,Cercado de Lima,Robo de celular,19,Jueves,-12.054498,-77.040551,Deficiente,2,0,0,1,0,Medio
+INC-0672,Breña,Robo al paso,21,Martes,-12.047386,-77.054826,Regular,2,1,1,0,1,Medio
+INC-0673,La Victoria,Hurto,20,Viernes,-12.076343,-77.023916,Regular,5,0,1,1,1,Alto
+INC-0674,La Victoria,Robo al paso,21,Jueves,-12.07416,-77.026916,Deficiente,6,0,1,0,1,Alto
+INC-0675,Cercado de Lima,Robo al paso,23,Sábado,-12.049137,-77.049145,Deficiente,2,1,0,0,1,Alto
+INC-0676,Cercado de Lima,Robo al paso,22,Sábado,-12.051159,-77.037563,Buena,1,1,0,0,0,Medio
+INC-0677,La Victoria,Robo de celular,17,Jueves,-12.061444,-77.018741,Buena,3,0,0,1,1,Bajo
+INC-0678,Cercado de Lima,Extorsión,7,Viernes,-12.065248,-77.038037,Deficiente,8,0,1,1,1,Alto
+INC-0679,La Victoria,Robo al paso,19,Jueves,-12.063314,-77.024231,Deficiente,3,1,0,1,0,Alto
+INC-0680,Jesús María,Robo al paso,7,Sábado,-12.069898,-77.05867,Deficiente,1,1,1,1,1,Medio
+INC-0681,Rímac,Robo de celular,18,Viernes,-12.032914,-77.027858,Regular,8,0,0,1,1,Bajo
+INC-0682,Rímac,Hurto,20,Martes,-12.03254,-77.029848,Deficiente,2,0,1,1,0,Medio
+INC-0683,Rímac,Robo al paso,18,Jueves,-12.021804,-77.030633,Deficiente,5,0,0,1,1,Bajo
+INC-0684,Cercado de Lima,Robo al paso,16,Martes,-12.047567,-77.038805,Deficiente,6,0,1,0,1,Alto
+INC-0685,La Victoria,Robo al paso,20,Sábado,-12.064028,-77.029964,Deficiente,5,0,1,1,0,Alto
+INC-0686,La Victoria,Robo al paso,23,Martes,-12.068017,-77.018185,Regular,3,1,1,0,1,Alto
+INC-0687,Cercado de Lima,Hurto,18,Lunes,-12.046175,-77.048989,Deficiente,1,1,1,1,1,Medio
+INC-0688,Cercado de Lima,Hurto,22,Miércoles,-12.044205,-77.035821,Regular,4,0,1,0,0,Medio
+INC-0689,Jesús María,Robo al paso,18,Jueves,-12.065172,-77.050187,Buena,8,0,0,1,1,Bajo
+INC-0690,Breña,Robo a vivienda,17,Viernes,-12.067102,-77.041569,Buena,3,0,0,1,0,Bajo
+INC-0691,Rímac,Robo al paso,23,Domingo,-12.02566,-77.031355,Deficiente,6,0,1,0,1,Alto
+INC-0692,La Victoria,Extorsión,16,Domingo,-12.062974,-77.023486,Deficiente,6,0,0,0,0,Medio
+INC-0693,La Victoria,Acoso en transporte,7,Lunes,-12.067463,-77.023545,Regular,3,1,1,1,1,Medio
+INC-0694,Rímac,Robo al paso,9,Sábado,-12.023563,-77.021473,Regular,2,1,1,1,0,Medio
+INC-0695,Cercado de Lima,Robo al paso,21,Lunes,-12.037761,-77.039013,Regular,6,0,0,0,0,Alto
+INC-0696,Cercado de Lima,Robo al paso,18,Lunes,-12.050395,-77.036409,Buena,4,0,0,1,1,Bajo
+INC-0697,Rímac,Robo de celular,19,Sábado,-12.029726,-77.025992,Regular,7,1,0,1,1,Medio
+INC-0698,La Victoria,Robo de celular,8,Sábado,-12.060085,-77.029658,Buena,6,1,1,1,1,Medio
+INC-0699,Rímac,Acoso en transporte,20,Viernes,-12.027286,-77.032169,Deficiente,1,0,1,1,1,Alto
+INC-0700,Cercado de Lima,Robo al paso,7,Jueves,-12.050573,-77.043142,Deficiente,6,0,1,1,0,Alto
+INC-0701,Lince,Robo al paso,6,Miércoles,-12.088967,-77.034099,Deficiente,5,0,0,0,1,Bajo
+INC-0702,Cercado de Lima,Hurto,6,Miércoles,-12.02979,-77.044309,Regular,3,0,1,0,1,Medio
+INC-0703,Cercado de Lima,Robo de celular,20,Viernes,-12.037612,-77.048806,Regular,4,0,0,1,1,Medio
+INC-0704,Cercado de Lima,Robo de laptop,23,Viernes,-12.049247,-77.05084,Regular,6,0,1,0,0,Alto
+INC-0705,Cercado de Lima,Robo al paso,7,Martes,-12.048936,-77.04202,Deficiente,8,0,1,1,0,Alto
+INC-0706,Cercado de Lima,Amenazas,6,Jueves,-12.048388,-77.04011,Regular,2,0,0,0,0,Bajo
+INC-0707,Jesús María,Robo al paso,20,Jueves,-12.077701,-77.058073,Deficiente,6,0,1,1,1,Alto
+INC-0708,Cercado de Lima,Robo de celular,21,Viernes,-12.046007,-77.037834,Buena,3,0,1,0,0,Medio
+INC-0709,Breña,Amenazas,8,Sábado,-12.060591,-77.048015,Buena,5,1,1,1,1,Bajo
+INC-0710,Cercado de Lima,Robo al paso,10,Viernes,-12.056313,-77.048813,Regular,7,0,0,0,0,Medio
+INC-0711,Cercado de Lima,Robo al paso,4,Viernes,-12.039069,-77.055503,Buena,3,0,1,0,0,Alto
+INC-0712,La Victoria,Hurto,20,Viernes,-12.082245,-77.023599,Buena,9,1,0,1,1,Alto
+INC-0713,Jesús María,Robo al paso,17,Viernes,-12.075144,-77.054091,Buena,4,0,0,1,1,Bajo
+INC-0714,Cercado de Lima,Robo a vivienda,21,Sábado,-12.053746,-77.048157,Regular,3,1,1,0,0,Alto
+INC-0715,Breña,Extorsión,17,Martes,-12.053515,-77.062174,Deficiente,3,0,0,1,0,Bajo
+INC-0716,Cercado de Lima,Robo a vivienda,22,Sábado,-12.056949,-77.044307,Buena,0,0,0,0,1,Medio
+INC-0717,Breña,Robo al paso,7,Domingo,-12.054159,-77.043663,Buena,6,1,1,1,1,Medio
+INC-0718,Lince,Robo a vivienda,6,Viernes,-12.080298,-77.047558,Deficiente,4,0,0,0,0,Bajo
+INC-0719,Cercado de Lima,Acoso en transporte,18,Martes,-12.040136,-77.041674,Buena,5,0,1,1,0,Medio
+INC-0720,Cercado de Lima,Robo al paso,20,Viernes,-12.041573,-77.037828,Regular,6,1,1,1,1,Alto
+INC-0721,Cercado de Lima,Amenazas,20,Miércoles,-12.058263,-77.036924,Buena,1,1,1,1,1,Medio
+INC-0722,Cercado de Lima,Robo al paso,7,Martes,-12.040222,-77.030905,Regular,3,1,1,1,1,Medio
+INC-0723,Cercado de Lima,Robo a vivienda,18,Martes,-12.036058,-77.037879,Deficiente,3,1,0,1,0,Medio
+INC-0724,Jesús María,Robo al paso,17,Sábado,-12.069872,-77.044924,Regular,7,0,1,1,1,Medio
+INC-0725,Cercado de Lima,Robo al paso,9,Jueves,-12.050647,-77.03998,Regular,3,0,0,1,1,Medio
+INC-0726,La Victoria,Robo de celular,8,Viernes,-12.076062,-77.014081,Buena,2,0,1,1,1,Medio
+INC-0727,Cercado de Lima,Robo de celular,21,Jueves,-12.042914,-77.050999,Deficiente,3,0,1,0,0,Alto
+INC-0728,Cercado de Lima,Robo al paso,18,Jueves,-12.050753,-77.043682,Deficiente,5,1,1,1,1,Alto
+INC-0729,La Victoria,Acoso en transporte,9,Miércoles,-12.073431,-77.020888,Deficiente,1,1,1,1,1,Alto
+INC-0730,Cercado de Lima,Hurto,19,Domingo,-12.049101,-77.060218,Regular,2,0,0,1,1,Medio
+INC-0731,Rímac,Robo de celular,18,Martes,-12.033852,-77.028113,Buena,7,0,1,1,0,Bajo
+INC-0732,Cercado de Lima,Robo al paso,8,Lunes,-12.039659,-77.038738,Deficiente,8,1,0,1,1,Alto
+INC-0733,La Victoria,Robo al paso,16,Domingo,-12.064787,-77.024615,Regular,6,0,0,0,0,Medio
+INC-0734,Rímac,Robo al paso,9,Lunes,-12.040198,-77.038842,Deficiente,5,0,1,1,0,Medio
+INC-0735,La Victoria,Hurto,21,Domingo,-12.077089,-77.015345,Regular,4,0,0,0,1,Medio
+INC-0736,Jesús María,Robo de celular,19,Lunes,-12.081823,-77.047085,Deficiente,3,1,1,1,0,Medio
+INC-0737,Jesús María,Robo de celular,8,Viernes,-12.082151,-77.046847,Regular,4,1,0,1,1,Bajo
+INC-0738,Breña,Robo a vivienda,6,Miércoles,-12.067362,-77.049172,Deficiente,4,1,0,0,1,Bajo
+INC-0739,Cercado de Lima,Robo a vivienda,19,Lunes,-12.049374,-77.052659,Buena,4,1,0,1,1,Medio
+INC-0740,La Victoria,Robo de celular,16,Martes,-12.068213,-77.009076,Deficiente,7,0,1,0,1,Medio
+INC-0741,Rímac,Robo de laptop,18,Domingo,-12.02676,-77.028618,Deficiente,4,1,1,1,1,Medio
+INC-0742,Breña,Robo al paso,19,Domingo,-12.068133,-77.047905,Deficiente,3,1,1,1,0,Alto
+INC-0743,Cercado de Lima,Robo al paso,8,Viernes,-12.046389,-77.038419,Deficiente,0,1,0,1,1,Alto
+INC-0744,Cercado de Lima,Robo de celular,17,Martes,-12.043265,-77.046719,Deficiente,3,0,1,1,0,Medio
+INC-0745,Breña,Hurto,9,Miércoles,-12.065453,-77.053583,Buena,3,0,1,1,1,Bajo
+INC-0746,La Victoria,Robo al paso,6,Viernes,-12.069816,-77.01505,Regular,1,1,1,0,1,Medio
+INC-0747,Rímac,Robo a vivienda,18,Domingo,-12.019904,-77.02777,Buena,5,0,1,1,0,Bajo
+INC-0748,La Victoria,Hurto,8,Sábado,-12.073057,-77.008324,Buena,1,0,1,1,1,Medio
+INC-0749,Cercado de Lima,Hurto,6,Jueves,-12.049106,-77.035288,Buena,1,0,1,0,1,Bajo
+INC-0750,Cercado de Lima,Robo al paso,22,Viernes,-12.040792,-77.04058,Regular,3,0,1,0,0,Alto
+INC-0751,Lince,Robo de laptop,22,Sábado,-12.095713,-77.028504,Deficiente,2,1,1,0,1,Alto
+INC-0752,Cercado de Lima,Hurto,17,Lunes,-12.059853,-77.037805,Buena,6,1,1,1,1,Medio
+INC-0753,Lince,Hurto,17,Lunes,-12.089696,-77.039805,Regular,4,1,1,1,1,Bajo
+INC-0754,Lince,Robo a vivienda,23,Martes,-12.086071,-77.037929,Regular,1,0,1,0,0,Medio
+INC-0755,Rímac,Extorsión,6,Miércoles,-12.033606,-77.028816,Deficiente,1,0,1,0,0,Bajo
+INC-0756,Cercado de Lima,Hurto,22,Miércoles,-12.049876,-77.033876,Regular,4,0,1,0,0,Medio
+INC-0757,La Victoria,Robo al paso,5,Martes,-12.06872,-77.009998,Buena,7,0,0,0,1,Medio
+INC-0758,Breña,Robo al paso,18,Viernes,-12.052595,-77.05499,Deficiente,4,0,1,1,0,Medio
+INC-0759,Cercado de Lima,Hurto,21,Jueves,-12.042775,-77.03925,Regular,3,0,0,0,0,Medio
+INC-0760,Rímac,Robo al paso,22,Martes,-12.030127,-77.021222,Regular,2,1,0,0,1,Medio
+INC-0761,Cercado de Lima,Acoso en transporte,21,Lunes,-12.050433,-77.040095,Deficiente,4,1,0,0,1,Alto
+INC-0762,La Victoria,Robo al paso,18,Domingo,-12.061602,-77.011448,Regular,4,1,0,1,1,Medio
+INC-0763,Cercado de Lima,Robo al paso,8,Sábado,-12.049101,-77.037293,Buena,3,1,1,1,1,Medio
+INC-0764,Breña,Extorsión,7,Miércoles,-12.05398,-77.041263,Buena,3,1,1,1,1,Bajo
+INC-0765,Breña,Robo a vivienda,8,Viernes,-12.068355,-77.062916,Buena,7,0,1,1,1,Bajo
+INC-0766,Breña,Robo al paso,19,Sábado,-12.063119,-77.057037,Regular,4,0,0,1,0,Medio
+INC-0767,Jesús María,Robo de celular,18,Lunes,-12.080798,-77.045521,Buena,1,0,0,1,1,Bajo
+INC-0768,Cercado de Lima,Robo de celular,18,Martes,-12.042644,-77.041396,Regular,4,0,1,1,1,Medio
+INC-0769,Jesús María,Robo a vivienda,5,Miércoles,-12.07334,-77.048938,Regular,4,0,1,0,0,Medio
+INC-0770,La Victoria,Robo de laptop,23,Miércoles,-12.06444,-77.026015,Regular,3,1,1,0,1,Alto
+INC-0771,Breña,Robo de laptop,9,Jueves,-12.054887,-77.056395,Buena,6,1,0,1,1,Bajo
+INC-0772,La Victoria,Robo a vivienda,20,Lunes,-12.068408,-77.015206,Buena,10,1,1,1,1,Alto
+INC-0773,Breña,Robo al paso,17,Miércoles,-12.056185,-77.050956,Regular,7,1,1,1,1,Medio
+INC-0774,Cercado de Lima,Robo al paso,9,Martes,-12.051303,-77.037457,Regular,3,0,1,1,0,Medio
+INC-0775,Cercado de Lima,Robo de celular,20,Lunes,-12.043306,-77.045326,Deficiente,5,1,1,1,1,Alto
+INC-0776,Cercado de Lima,Robo al paso,18,Martes,-12.051845,-77.042646,Deficiente,3,0,0,1,0,Medio
+INC-0777,La Victoria,Robo al paso,8,Viernes,-12.067338,-77.02063,Buena,1,1,0,1,1,Medio
+INC-0778,Breña,Amenazas,22,Martes,-12.057016,-77.058003,Regular,6,1,1,0,0,Medio
+INC-0779,Jesús María,Hurto,17,Martes,-12.077022,-77.055391,Regular,1,1,1,1,1,Bajo
+INC-0780,Breña,Acoso en transporte,15,Viernes,-12.047274,-77.056091,Buena,7,1,0,0,1,Bajo
+INC-0781,Rímac,Robo al paso,19,Domingo,-12.032619,-77.022364,Regular,6,1,1,1,0,Alto
+INC-0782,Breña,Robo a vivienda,17,Martes,-12.058973,-77.058006,Deficiente,1,0,1,1,0,Bajo
+INC-0783,La Victoria,Robo al paso,17,Martes,-12.07841,-77.024353,Deficiente,6,0,0,1,1,Medio
+INC-0784,Breña,Robo de laptop,17,Jueves,-12.060767,-77.049565,Buena,2,0,1,1,0,Bajo
+INC-0785,Cercado de Lima,Hurto,5,Viernes,-12.035811,-77.047579,Buena,6,0,0,0,1,Medio
+INC-0786,Cercado de Lima,Robo al paso,5,Lunes,-12.032305,-77.037101,Regular,2,0,0,0,0,Medio
+INC-0787,Breña,Robo de laptop,20,Martes,-12.060756,-77.044958,Regular,2,0,0,1,1,Medio
+INC-0788,La Victoria,Robo a vivienda,9,Domingo,-12.068929,-77.01233,Buena,6,0,1,1,0,Medio
+INC-0789,Rímac,Robo de laptop,23,Lunes,-12.026515,-77.02714,Buena,2,0,0,0,0,Bajo
+INC-0790,Rímac,Robo de celular,20,Domingo,-12.027394,-77.028624,Regular,3,0,0,1,1,Bajo
+INC-0791,Rímac,Robo al paso,23,Viernes,-12.023236,-77.035633,Regular,4,0,0,0,1,Medio
+INC-0792,La Victoria,Robo al paso,7,Viernes,-12.059314,-77.025951,Deficiente,2,1,1,1,0,Alto
+INC-0793,Cercado de Lima,Robo de celular,10,Miércoles,-12.041909,-77.031396,Regular,4,1,1,0,0,Medio
+INC-0794,La Victoria,Robo al paso,8,Jueves,-12.065638,-77.024567,Buena,4,0,1,1,1,Medio
+INC-0795,La Victoria,Robo a vivienda,22,Domingo,-12.053454,-77.018465,Regular,4,0,1,0,0,Medio
+INC-0796,La Victoria,Hurto,19,Jueves,-12.054489,-77.022539,Buena,4,0,1,1,0,Medio
+INC-0797,La Victoria,Acoso en transporte,19,Miércoles,-12.075917,-77.012015,Regular,4,1,0,1,1,Alto
+INC-0798,Breña,Robo al paso,18,Lunes,-12.064836,-77.05551,Regular,4,1,1,1,1,Medio
+INC-0799,Rímac,Robo al paso,6,Jueves,-12.015632,-77.021965,Buena,4,1,0,0,1,Bajo
+INC-0800,Cercado de Lima,Robo al paso,19,Martes,-12.045235,-77.050532,Regular,1,1,1,1,1,Alto
