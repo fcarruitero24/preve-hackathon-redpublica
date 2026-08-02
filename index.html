@@ -34,9 +34,18 @@
   .live-badge .d { width:8px; height:8px; border-radius:50%; background:var(--danger); animation:blink 1s infinite; }
   @keyframes blink { 50%{opacity:.25;} }
   .ticker { margin-top:16px; background:var(--glass); border:1px solid var(--glass-brd); border-radius:12px; overflow:hidden; display:flex; align-items:center; height:40px; }
-  .ticker .lab { background:var(--accent); color:#1a1205; font-weight:800; font-size:11px; padding:0 12px; height:100%; display:flex; align-items:center; letter-spacing:.5px; white-space:nowrap; }
-  .ticker .track { white-space:nowrap; animation:scroll 26s linear infinite; font-size:13px; color:var(--muted); padding-left:16px; }
-  @keyframes scroll { from{transform:translateX(40%);} to{transform:translateX(-100%);} }
+  /* flex:none impide que la etiqueta se comprima; z-index la mantiene por
+     encima del texto, que si no le pasaria por delante al desplazarse. */
+  .ticker .lab { flex:none; position:relative; z-index:2; background:var(--accent); color:#1a1205; font-weight:800; font-size:11px; padding:0 12px; height:100%; display:flex; align-items:center; letter-spacing:.5px; white-space:nowrap; }
+  .ticker .win { flex:1 1 auto; min-width:0; overflow:hidden; }
+  .ticker .track { display:flex; width:max-content; white-space:nowrap; animation:scroll 30s linear infinite; font-size:13px; color:var(--muted); }
+  .ticker .track span { padding-left:28px; }
+  /* Pausa al pasar el cursor: el texto en movimiento se puede detener para leerlo. */
+  .ticker:hover .track, .ticker:focus-within .track { animation-play-state:paused; }
+  /* Con dos ejemplares identicos, -50% cae exactamente sobre el inicio del
+     segundo, asi que el salto del bucle es invisible. */
+  @keyframes scroll { from{transform:translateX(0);} to{transform:translateX(-50%);} }
+  @media (prefers-reduced-motion:reduce) { .ticker .track { animation:none; } }
   .stage { display:grid; grid-template-columns:350px 1fr; gap:18px; margin-top:18px; align-items:start; }
   @media (max-width:940px){ .stage{grid-template-columns:1fr;} }
   .phone { background:linear-gradient(180deg,#1a1a1a,#000); border-radius:40px; padding:11px; box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06) inset; width:350px; justify-self:center; position:relative; }
@@ -115,7 +124,15 @@
   </header>
   <div class="ticker">
     <div class="lab">⚡ EN TIEMPO REAL</div>
-    <div class="track" id="ticker-track">Sistema PreVe operativo · Protección predictiva para juventudes · El motor de ML analiza patrones en rutas universidad-paradero-trabajo · Reporta 3 veces una misma zona para activar una alerta a la comunidad estudiantil ·</div>
+    <!-- La ventana recorta el texto para que no invada la etiqueta. El mensaje
+         va duplicado a proposito: el segundo ejemplar entra justo cuando el
+         primero termina de salir, y el bucle no deja hueco. -->
+    <div class="win">
+      <div class="track" id="ticker-track">
+        <span>Sistema PreVe operativo · Protección predictiva para juventudes · El motor de ML analiza patrones en rutas universidad-paradero-trabajo · Reporta 3 veces una misma zona para activar una alerta a la comunidad estudiantil ·</span>
+        <span aria-hidden="true">Sistema PreVe operativo · Protección predictiva para juventudes · El motor de ML analiza patrones en rutas universidad-paradero-trabajo · Reporta 3 veces una misma zona para activar una alerta a la comunidad estudiantil ·</span>
+      </div>
+    </div>
   </div>
   <div class="stage">
     <div class="phone">
