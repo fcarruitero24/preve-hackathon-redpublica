@@ -68,8 +68,9 @@
   .typing span:nth-child(2){animation-delay:.15s;} .typing span:nth-child(3){animation-delay:.3s;}
   @keyframes bob { 0%,60%,100%{transform:translateY(0);opacity:.4;} 30%{transform:translateY(-5px);opacity:1;} }
   .chips { display:flex; flex-wrap:wrap; gap:6px; padding:8px 12px; background:#0b141a; border-top:1px solid rgba(255,255,255,.05); }
-  .chip { background:#1f2c34; color:#8fd6c4; border:1px solid #2a3942; border-radius:14px; padding:6px 10px; font-size:11.5px; cursor:pointer; transition:.15s; }
+  .chip { font-family:inherit; background:#1f2c34; color:#8fd6c4; border:1px solid #2a3942; border-radius:14px; padding:6px 10px; font-size:11.5px; cursor:pointer; transition:.15s; }
   .chip:hover { background:var(--wa-green); color:#04241d; transform:translateY(-1px); }
+  .chip:focus-visible, .btn:focus-visible, .inbar button:focus-visible, .inbar input:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
   .inbar { background:#1f2c33; padding:9px 10px; display:flex; gap:8px; align-items:center; }
   .inbar input { flex:1; background:#2a3942; border:none; border-radius:20px; padding:11px 15px; color:#e9edef; font-size:13.5px; outline:none; }
   .inbar button { width:42px; height:42px; border-radius:50%; border:none; background:var(--wa-green); color:#04241d; font-size:17px; cursor:pointer; transition:.1s; }
@@ -143,7 +144,7 @@
         </div>
         <div class="body" id="chat"></div>
         <div class="chips" id="chips"></div>
-        <div class="inbar"><input id="input" placeholder="Escribe tu reporte..." autocomplete="off"><button id="send">➤</button></div>
+        <div class="inbar"><input id="input" placeholder="Escribe tu reporte..." autocomplete="off" aria-label="Escribe tu reporte"><button id="send" aria-label="Enviar reporte">➤</button></div>
       </div>
     </div>
     <div class="right">
@@ -161,13 +162,15 @@
         <h2><span class="n">2</span> Indicadores</h2>
         <div class="stats">
           <div class="stat" id="s1"><div class="v" id="stat-reports">0</div><div class="l">Reportes</div></div>
-          <div class="stat" id="s2"><div class="v" id="stat-zones">0</div><div class="l">Zonas críticas</div></div>
+          <!-- Cuenta desde 2 reportes (ambar en el mapa). "Critica" se reserva
+               para las que disparan alerta, a partir de 3. -->
+          <div class="stat" id="s2"><div class="v" id="stat-zones">0</div><div class="l">Zonas en riesgo</div></div>
           <div class="stat" id="s3"><div class="v" id="stat-alerts">0</div><div class="l">Alertas</div></div>
         </div>
       </div>
       <div class="card">
         <h2><span class="n">3</span> Alertas a la comunidad</h2>
-        <div class="alerts" id="alerts">
+        <div class="alerts" id="alerts" role="status" aria-live="polite">
           <div class="empty">Sin alertas todavía. Cuando una zona acumule varios reportes, el motor de ML disparará una alerta automática aquí.</div>
         </div>
         <div class="controls">
@@ -223,21 +226,46 @@ function drawMap(){
 }
 function loop(){_phase+=0.08;drawMap();requestAnimationFrame(loop);}
 const chat=document.getElementById('chat'),chipsBox=document.getElementById('chips');
-const SUGG=["Me robaron el celular saliendo de la UNMSM","Intento de robo en paradero UNI","Acoso en transporte público","Robo de laptop en UTP Breña"];
+// Cada sugerencia nombra una zona: sin lugar, el bot no puede registrar nada y
+// el ejemplo termina en un mensaje de error.
+const SUGG=["Me robaron el celular saliendo de la UNMSM","Intento de robo en paradero UNI","Acoso en el paradero de Gamarra","Robo de laptop en UTP Breña"];
 function now(){const d=new Date();return d.getHours().toString().padStart(2,'0')+":"+d.getMinutes().toString().padStart(2,'0');}
+// Las respuestas del bot llegan con retardo. Si se reinicia la demo mientras
+// alguna esta en camino, sin cancelarla escribiria sobre el estado ya limpiado
+// y el contador acabaria en 1 despues de un reinicio.
+let pendientes=[];
+function luego(fn,ms){
+  const id=setTimeout(()=>{pendientes=pendientes.filter(x=>x!==id);fn();},ms);
+  pendientes.push(id);return id;
+}
+function cancelarPendientes(){pendientes.forEach(clearTimeout);pendientes=[];}
 function addMsg(t,c){const m=document.createElement('div');m.className='msg '+c;m.innerHTML=t+(c!=='sys'?`<span class="time">${now()}</span>`:'');chat.appendChild(m);chat.scrollTop=chat.scrollHeight;return m;}
 function typing(){const d=document.createElement('div');d.className='typing';d.id='typing';d.innerHTML='<span></span><span></span><span></span>';chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
 function stopTyping(){const t=document.getElementById('typing');if(t)t.remove();}
-function renderChips(){chipsBox.innerHTML='';SUGG.forEach(s=>{const c=document.createElement('div');c.className='chip';c.textContent=s;c.onclick=()=>processReport(s);chipsBox.appendChild(c);});}
+// Botones, no divs: asi se pueden recorrer y activar con el teclado.
+function renderChips(){chipsBox.innerHTML='';SUGG.forEach(s=>{const c=document.createElement('button');c.type='button';c.className='chip';c.textContent=s;c.onclick=()=>processReport(s);chipsBox.appendChild(c);});}
+// Se compara sobre el texto sin tildes, para que "rímac"/"rimac" y
+// "breña"/"brena" entren por el mismo sitio sin duplicar claves.
+function normaliza(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+// Palabra suelta, no fragmento: asi "uni" reconoce "paradero UNI" pero no se
+// dispara dentro de "universidad" ni de "union".
+function tienePalabra(txt,palabra){return new RegExp(`(^|[^a-z0-9])${palabra}([^a-z0-9]|$)`).test(txt);}
+// Claves por zona, en el mismo orden que ZONES.
+const ZONA_CLAVES=[
+  ["abancay"],
+  ["union"],
+  ["central","mercado"],
+  ["uni","cercado","barrios altos"],
+  ["gamarra","victoria"],
+  ["unmsm","san marcos","dos de mayo"],
+  ["rimac"],
+  ["utp","brena"],
+];
 function parse(text){
-  const l=text.toLowerCase();let zoneIdx=-1;
-  if(l.includes('abancay'))zoneIdx=0;else if(l.includes('union')||l.includes('unión'))zoneIdx=1;
-  else if(l.includes('central')||l.includes('mercado'))zoneIdx=2;
-  else if(l.includes('uni ')||l.includes('uni/')||l.includes('cercado')||l.includes('barrios altos'))zoneIdx=3;
-  else if(l.includes('gamarra')||l.includes('victoria'))zoneIdx=4;
-  else if(l.includes('unmsm')||l.includes('san marcos')||l.includes('dos de mayo'))zoneIdx=5;
-  else if(l.includes('rimac')||l.includes('rímac'))zoneIdx=6;
-  else if(l.includes('utp')||l.includes('breña')||l.includes('brena'))zoneIdx=7;
+  const l=normaliza(text);let zoneIdx=-1;
+  for(let i=0;i<ZONA_CLAVES.length&&zoneIdx<0;i++){
+    if(ZONA_CLAVES[i].some(k=>tienePalabra(l,k)))zoneIdx=i;
+  }
   let crime="incidente";
   if(l.includes('laptop'))crime="robo de laptop";
   else if(l.includes('celular'))crime="arrebato de celular";
@@ -251,13 +279,13 @@ function parse(text){
 function processReport(text){
   addMsg(text,'out');
   const {zoneIdx,crime}=parse(text);
-  setTimeout(typing,300);
-  setTimeout(()=>{
+  luego(typing,300);
+  luego(()=>{
     stopTyping();
     if(zoneIdx<0){addMsg("No identifiqué la zona 🤔 Menciona un lugar de Lima Centro (ej. <b>Av. Abancay</b>, <b>Gamarra</b>, <b>Barrios Altos</b>).",'in');return;}
     const z=ZONES[zoneIdx];
     addMsg(`<span style="color:#8fd6c4">🤖 IA analizó tu mensaje</span>`,'sys');
-    setTimeout(()=>{
+    luego(()=>{
       reports.push({zoneIdx,crime,hour:now()});ripple(zoneIdx);
       addMsg(`✅ <b>Reporte registrado</b><br>📍 <b>${z.name}</b><br>🚨 ${crime}<br>🕐 ${now()}<br><br><span style="color:#8fd6c4">Tu reporte protege a tu comunidad.</span>`,'in');
       updateAll(zoneIdx);
@@ -281,7 +309,7 @@ function fireAlert(zoneIdx,n){
   const a=document.createElement('div');a.className='alert';
   a.innerHTML=`<div class="h"><span class="pulse"></span> Zona crítica detectada</div>El motor de ML agrupó <b>${n} incidentes</b> cerca de <b>${z.name}</b>.<div class="m">📲 Alerta enviada por WhatsApp a vecinos registrados · ${now()}</div>`;
   box.prepend(a);
-  setTimeout(()=>{addMsg(`⚠️ <b>Alerta PreVe</b><br>Detectamos varios incidentes cerca de <b>${z.name}</b>. Avisamos a los vecinos de la zona para que tomen precauciones. 🛡️`,'in');},700);
+  luego(()=>{addMsg(`⚠️ <b>Alerta PreVe</b><br>Detectamos varios incidentes cerca de <b>${z.name}</b>. Avisamos a los vecinos de la zona para que tomen precauciones. 🛡️`,'in');},700);
 }
 function showToast(txt){const t=document.getElementById('toast');document.getElementById('toast-text').textContent=txt;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600);}
 cv.addEventListener('click',e=>{
@@ -304,6 +332,8 @@ function submit(){const v=input.value.trim();if(!v)return;input.value='';process
 document.getElementById('send').onclick=submit;
 input.addEventListener('keydown',e=>{if(e.key==='Enter')submit();});
 document.getElementById('reset').onclick=()=>{
+  cancelarPendientes();stopTyping();
+  document.getElementById('toast').classList.remove('show');
   reports=[];alertsSent=0;alertedZones=new Set();particles=[];chat.innerHTML='';
   document.getElementById('alerts').innerHTML='<div class="empty">Sin alertas todavía. Cuando una zona acumule varios reportes, el motor de ML disparará una alerta automática aquí.</div>';
   ['stat-reports','stat-zones','stat-alerts'].forEach(id=>document.getElementById(id).textContent='0');
@@ -312,7 +342,7 @@ document.getElementById('reset').onclick=()=>{
 };
 function boot(){
   addMsg("👋 ¡Hola! Soy <b>PreVe Bot</b>. Soy el sistema predictivo de seguridad para juventudes en Lima Centro. Reporta cualquier incidente y te protegeré a ti y a tus compañeros estudiantes.",'in');
-  setTimeout(()=>addMsg("🎓 Las zonas con birrete son <b>universitarias</b>. Prueba un ejemplo de abajo, toca una zona en el mapa, o pulsa <b>Simulación automática</b>. Reporta <b>3 veces la misma zona</b> para activar una alerta. 🚨",'in'),400);
+  luego(()=>addMsg("🎓 Las zonas con birrete son <b>universitarias</b>. Prueba un ejemplo de abajo, toca una zona en el mapa, o pulsa <b>Simulación automática</b>. Reporta <b>3 veces la misma zona</b> para activar una alerta. 🚨",'in'),400);
 }
 renderChips();window.addEventListener('resize',sizeCanvas);sizeCanvas();boot();loop();
 </script>
